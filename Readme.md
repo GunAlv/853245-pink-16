@@ -1,6 +1,6 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Gun](https://up.htmlacademy.ru/htmlcss/24/user/853245).
+* Студент: [Gun](https://up.htmlacademy.ru/htmlcss/16/user/853245).
 * Наставник: [Полина Катышева](https://htmlacademy.ru/profile/polina).
 
 ---
