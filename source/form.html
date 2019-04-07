@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
 </head>
 <body>
   <header class="page-header">
@@ -41,8 +43,6 @@
         </div>
       </div>
     </div>
-  </header>
-  <main class="form-main">
     <section class="promo">
       <div class="wrapper">
         <h1 class="promo__title">
@@ -50,14 +50,16 @@
         </h1>
       </div>
     </section>
+  </header>
+  <main class="form-main">
     <section class="promo-text">
       <div class="wrapper">
-        <div class="title">
-          <h2 class="promo-text__title title-text">
+        <div class="caption">
+          <h2 class="promo-text__caption caption__text">
             Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
           </h2>
         </div>
-        <div class="competition__form">
+        <div class="competition">
           <form action="https://echo.htmlacademy.ru" method="post" class="form">
             <fieldset class="form__item">
               <legend class="form__legend visually-hidden">
@@ -76,7 +78,7 @@
                 <input class="input__custom-input" type="text" placeholder="Ну и отчество тоже" name="user_patronymic" id="user_patronymic">
               </div>
             </fieldset>
-            <fieldset class="form__item">
+            <fieldset class="form__item form__item--grey">
               <legend class="form__legend">
                 Ваши безбашенные достижения в путешествии
               </legend>
@@ -134,7 +136,7 @@
                 <input class="input__custom-input" type="email" placeholder="Введите почту *" name="user_email" id="user_email">
               </div>
             </fieldset>
-            <fieldset class="form__item">
+            <fieldset class="form__item form__item--grey">
               <legend class="form__legend">
               С каким приложением путешествовали?
               </legend>

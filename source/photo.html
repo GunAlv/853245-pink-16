@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
 </head>
 <body>
   <header class="page-header">
@@ -41,8 +43,6 @@
         </div>
       </div>
     </div>
-  </header>
-  <main class="form-main">
     <section class="promo">
       <div class="wrapper">
         <h1 class="promo__title">
@@ -50,10 +50,12 @@
         </h1>
       </div>
     </section>
+  </header>
+  <main class="photo-main">
     <section class="promo-text">
       <div class="wrapper">
-        <div class="title">
-          <h2 class="promo-text__title title-text">
+        <div class="caption">
+          <h2 class="promo-text__caption caption__text">
             Взгляните на фотографии, которые выкладывают пользователи!
             Видите, как не хватает ваших?
           </h2>
@@ -215,8 +217,8 @@
     </section>
     <section class="filter">
       <div class="wrapper">
-        <div class="title">
-          <h2 class="filter__title title-text">
+        <div class="filter__title-container">
+          <h2 class="filter__title">
             Затмите их всех!
             Выкладывайте все, что накопилось в телефоне!
           </h2>
@@ -247,8 +249,8 @@
               </div>
             </div>
             <div class="filter__buttons">
-              <button type="submit" class="filter__submit button">Запостить</button>
-              <button type="reset" class="filter__reset button">Отмена</button>
+              <button type="submit" class="filter__button filter__button--submit button">Запостить</button>
+              <button type="reset" class="filter__button filter__button--reset button">Отмена</button>
             </div>
           </div>
         </form>

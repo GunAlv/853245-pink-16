@@ -1,0 +1,29 @@
+.form__item {
+  margin: 0;
+  padding: 0;
+  border: none;
+  &--grey {
+    background-color: #f2f2f2;
+  }
+}
+
+.form__legend {
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.form__button {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #2aab6d;
+  border: 2px solid #2aab6d;
+  display: inline-block;
+  vertical-align: top;
+  padding: 17px 10px;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+}
