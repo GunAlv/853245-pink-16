@@ -1,0 +1,25 @@
+.photo__info {
+  background-color: $grey;
+}
+
+.photo__author {
+  font-weight: 700;
+}
+
+.photo__time {
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.photo__author-comment {
+  line-height: 24px;
+}
+
+.photo__likes-amount {
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $pink;
+}

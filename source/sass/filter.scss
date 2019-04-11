@@ -1,0 +1,22 @@
+.filter__title {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.filter__form-container {
+  background-color: $grey;
+}
+
+.filter__button {
+  &--submit {
+    color: $pink;
+    border: 3px solid $pink;
+  }
+
+  &--reset {
+    color: #283645;
+    border: 3px solid #283645;
+    opacity: 0.1;
+  }
+}

@@ -12,7 +12,8 @@ gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(sass())
+    // .pipe(sass())
+    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(postcss([
       autoprefixer()
     ]))
