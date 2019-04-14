@@ -1,5 +1,8 @@
 @import "base.scss";
+@import "wrapper.scss";
+@import "title.scss";
 @import "variables.scss";
+@import "mixins.scss";
 @import "visually-hidden.scss";
 @import "page-header.scss";
 @import "nav.scss";
@@ -8,7 +11,6 @@
 @import "advantages.scss";
 @import "reviews.scss";
 @import "tariffs.scss";
-@import "title.scss";
 @import "feedback.scss";
 @import "promo.scss";
 @import "caption.scss";

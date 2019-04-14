@@ -3,65 +3,77 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <div class="wrapper">
-        <div class="page-header__flex">
-          <a class="page-header__logo logo">
-            <img src="#" class="logo__img" width="75" height="22" alt="Логотип сайта мобильного приложения Pink">
-          </a>
-          <div class="page-header__nav nav">
-            <button type="button" class="nav__toggle" aria-label="Кнопка меню">
-            </button>
-            <nav>
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <a class="nav__link nav__link--current">
-                    Главная
-                  </a>
-                </li>
-                <li class="nav__item">
-                  <a href="photo.html" class="nav__link">
-                    Фотографии
-                  </a>
-                </li>
-                <li class="nav__item">
-                  <a href="form.html" class="nav__link">
-                    Конкурс
-                  </a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">
-                    Html Academy
-                  </a>
-                </li>
-              </ul>
-            </nav>
+      <div class="page-header__top">
+        <div class="wrapper">
+          <div class="page-header__flex">
+            <a class="page-header__logo logo">
+              <img src="img/logo-pink-white-mobile.svg" class="logo__img" width="75" height="22" alt="Логотип сайта мобильного приложения Pink">
+            </a>
+            <div class="page-header__nav nav">
+              <button type="button" class="nav__toggle" aria-label="Кнопка меню">
+              </button>
+              <nav class="nav__container">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a class="nav__link nav__link--current">
+                      Главная
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="photo.html" class="nav__link">
+                      Фотографии
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="form.html" class="nav__link">
+                      Конкурс
+                    </a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link">
+                      Html Academy
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
       <section class="download">
-        <h2 class="visually-hidden">
-          Ссылки на скачивание приложения
-        </h2>
         <div class="wrapper">
+          <h2 class="visually-hidden">
+            Ссылки на скачивание приложения
+          </h2>
           <div class="download__container">
+            <h3 class="download__title title">
+              Взгляните на жизнь иначе!
+            </h3>
             <a href="#" class="download__button button">
               Скачать приложение
             </a>
             <div class="download__list-container">
               <ul class="download__list">
                 <li class="download__item">
-                  <a href="#" class="download__link button" aria-label="Ссылка для ios"></a>
+                  <a href="#" class="download__link" aria-label="Ссылка для ios">
+                    <img src="img/logo-apple.svg" alt="Pink для Apple" class="download__img" width="47" height="56">
+                  </a>
                 </li>
                 <li class="download__item">
-                  <a href="#" class="download__link button" aria-label="Ссылка для android"></a>
+                  <a href="#" class="download__link" aria-label="Ссылка для android">
+                    <img src="img/logo-android.svg" alt="Pink для Android" class="download__img" width="43" height="47">
+                  </a>
                 </li>
                 <li class="download__item">
-                  <a href="#" class="download__link button" aria-label="Ссылка для windows"></a>
+                  <a href="#" class="download__link" aria-label="Ссылка для microsoft">
+                    <img src="img/logo-microsoft.svg" alt="Pink для Microsoft" class="download__img" width="44" height="41">
+                  </a>
                 </li>
               </ul>
             </div>
@@ -300,6 +312,7 @@
         </h2>
         <img src="#" class="map__img" alt="ул. Большая Конюшенная, 19/8">
       </section>
-    </main>
+    </main>'
+    <script src="js/script.js"></script>
   </body>
 </html>
