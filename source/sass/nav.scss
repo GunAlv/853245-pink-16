@@ -114,7 +114,8 @@
     display: none;
   }
 
-  .nav__container--opened {
+  .nav__container--opened,
+  .nav__container--no-js {
     display: block;
   }
 
