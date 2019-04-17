@@ -1,10 +1,27 @@
-.advantages__text {
+.advantages {
+  padding-top: 40px;
+}
+
+.advantages__title {
   font-size: 24px;
   font-weight: 300;
 }
 
+.advantages__title:nth-of-type(1) {
+  margin-bottom: 23px;
+}
+
+.advantages__title:nth-of-type(2) {
+  margin-bottom: 5px;
+}
+
 .advantages__container {
   background-color: $grey;
+  background-image: url("../img/bg-curve.svg");
+  background-repeat: no-repeat;
+  padding-top: 110px;
+  background-position: center top;
+  padding-bottom: 285px;
 }
 
 .advantages__caption {
@@ -12,4 +29,220 @@
   font-weight: bold;
   line-height: 24px;
   color: #000000;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.advantages__descript {
+  margin: 0;
+  line-height: 24px;
+}
+
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages__item {
+  text-align: center;
+  margin-bottom: 33px;
+  position: relative;
+}
+
+.advantages__img {
+  position: absolute;
+}
+
+.advantages__img--mobile {
+  bottom: -316px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.advantages__img--tablet,
+.advantages__img--desktop {
+  display: none;
+}
+
+.advantages__effect {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .advantages {
+    padding-top: 47px;
+  }
+
+  .advantages__effect {
+    display: block;
+  }
+
+  .advantages__list {
+    width: 310px;
+    margin-left: auto;
+  }
+
+  .advantages__item {
+    text-align: left;
+  }
+
+  .advantages__img--mobile {
+    display: none;
+  }
+
+  .advantages__container {
+    padding-bottom: 5px;
+    padding-top: 90px;
+    margin-top: 30px;
+  }
+
+  .advantages__item {
+    margin-bottom: 38px;
+  }
+
+  .advantages__img--tablet {
+    display: block;
+    left: -310px;
+    bottom: -42px;
+  }
+
+  .advantages__title:nth-of-type(1) {
+    margin-bottom: 0;
+  }
+
+  .advantages__title:nth-of-type(2) {
+    width: 340px;
+    margin: 0 auto;
+  }
+
+  .advantages__effect {
+    padding: 95px 0;
+  }
+
+  .advantages__effect-texts {
+    width: 310px;
+    margin-left: auto;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/effect-tablet@1x.png");
+      width: 238px;
+      height: 276px;
+      top: -38px;
+      left: -310px;
+    }
+  }
+
+  .advantages__effect-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    margin: 0;
+    width: 168px;
+    margin-bottom: 11px;
+  }
+
+  .advantages__link {
+    color: $pink;
+    line-height: 24px;
+    text-decoration: underline;
+    margin-top: 10px;
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages {
+    padding-top: 68px;
+  }
+
+  .advantages__container {
+    background-size: 100%, auto;
+    margin-top: 70px;
+  }
+
+  .advantages__img--tablet {
+    display: none;
+  }
+
+  .advantages__title:nth-of-type(2) {
+    width: 430px;
+  }
+
+  .advantages__caption {
+    font-size: 30px;
+    line-height: 30px;
+    width: 236px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+  }
+
+  .advantages__descript {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .advantages__descript:not(.advantages__descript--effect) {
+    width: 240px;
+    margin: 0 auto;
+  }
+
+  .advantages__item {
+    text-align: center;
+    width: 292px;
+  }
+
+  .advantages__list {
+    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: space-between;
+    margin-top: -85px;
+  }
+
+  .advantages__img--desktop {
+    display: block;
+  }
+
+  .advantages__img {
+    position: static;
+    margin-bottom: 55px;
+  }
+
+  .advantages__effect {
+    padding: 115px 0;
+    background-color: $grey;
+  }
+
+  .advantages__effect-texts {
+    width: 530px;
+    margin-right: 40px;
+
+    &::before {
+      background-image: url("../img/effect-desktop@1x.png");
+      width: 298px;
+      height: 345px;
+      top: -90px;
+      left: -370px;
+    }
+  }
+
+  .advantages__effect-title {
+    width: auto;
+    margin-bottom: 22px;
+  }
+
+  .advantages__effect-title br {
+    display: none;
+  }
+
+  .advantages__link {
+    font-size: 18px;
+  }
+
+  .advantages__descript--effect {
+    margin-bottom: 33px;
+  }
 }

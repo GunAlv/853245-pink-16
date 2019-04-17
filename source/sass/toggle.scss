@@ -1,0 +1,83 @@
+.toggle__button {
+  display: block;
+  width: 50px;
+  height: 24px;
+  // position: absolute;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  outline: none;
+}
+
+.toggle__button::after {
+  position: absolute;
+  content: "";
+  top: -6px;
+  left: 0;
+  width: 48px;
+  height: 4px;
+  box-shadow: 0 4px 0 0 #ffffff, 0 14px 0 0 #ffffff, 0 24px 0 0 #ffffff;
+  transition: 0.3s;
+}
+
+.toggle__button:hover::after,
+.toggle__button:focus::after {
+  box-shadow: 0 4px 0 0 $pink, 0 14px 0 0 $pink, 0 24px 0 0 $pink;
+}
+
+.toggle__button:active::after,
+.toggle__button:active::before {
+  opacity: 0.3;
+}
+
+.toggle__button--opened {
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  right: 0;
+  transition: 0.3s;
+}
+
+.toggle__button--opened::before,
+.toggle__button--opened::after {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 26px;
+  top: -5px;
+  left: 7px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: none;
+}
+
+.toggle__button--opened::before {
+  transform: rotate(45deg);
+}
+
+.toggle__button--opened::after {
+  transform: rotate(-45deg);
+}
+
+.toggle__button--opened:hover::before,
+.toggle__button--opened:hover::after {
+  background-color: $pink;
+  box-shadow: none;
+}
+
+.toggle__button--opened:focus::before,
+.toggle__button--opened:focus::after {
+  background-color: $pink;
+  box-shadow: none;
+}
+
+.toggle__button--opened:active::before,
+.toggle__button--opened:active::after {
+  opacity: 0.3;
+  box-shadow: none;
+}

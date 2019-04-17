@@ -1,0 +1,46 @@
+.logo {
+  display: block;
+  width: 75px;
+  height: 22px;
+  position: relative;
+}
+
+.logo__img {
+  position: absolute;
+  display: none;
+}
+
+.logo__img--mobile {
+  display: block;
+  width: 75px;
+  height: 22px;
+}
+
+@media (min-width: 660px) {
+  .logo {
+    width: 147px;
+    height: 40px;
+  }
+
+  .logo__img--mobile {
+    display: none;
+  }
+
+  .logo__img--tablet {
+    display: block;
+    width: 147px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo__img--tablet {
+    display: none;
+  }
+
+  .logo__img--desktop {
+    display: block;
+    width: 147px;
+    height: 40px;
+  }
+}
