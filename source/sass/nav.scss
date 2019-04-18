@@ -31,7 +31,7 @@
   }
 
   .nav__item {
-    box-shadow: 0 -1px 0 #000, inset 0 1px 0 rgba(255,255,255,.15);
+    box-shadow: 0 -1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
   }
 }
 
@@ -40,6 +40,28 @@
     font-size: 18px;
     line-height: 18px;
     color: #ffffff;
+    transition: 0.1s;
+    position: relative;
+  }
+
+  .nav__link--current::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+    left: 0;
+    bottom: -6px;
+  }
+
+  .nav__link:hover,
+  .nav__link:focus {
+    color: $pink;
+  }
+
+  .nav__link:active {
+    color: #ffffff;
+    opacity: 0.3;
   }
 
   .nav {
