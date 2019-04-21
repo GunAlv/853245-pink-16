@@ -1,5 +1,5 @@
 .reviews {
-  padding: 40px 0;
+  padding-top: 40px;
 }
 
 .reviews__author {
@@ -50,7 +50,7 @@
 
 @keyframes slider {
   0% {
-    opacity: 0.3;
+    opacity: 0.4;
     transform: translateX(400px);
   }
 

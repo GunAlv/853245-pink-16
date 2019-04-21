@@ -37,17 +37,17 @@ nextBtn.addEventListener('click', function() {
   reviewItems[i].classList.add('reviews__item--shown');
 });
 
-var sliderItems = document.querySelectorAll('.slider__item');
+var reviewsSlider = document.querySelectorAll('.reviews__slider-item');
 
-sliderItems[0].addEventListener('click', function() {
+reviewsSlider[0].addEventListener('click', function() {
   slider(reviewItems[1], reviewItems[2], reviewItems[0]);
 });
 
-sliderItems[1].addEventListener('click', function() {
+reviewsSlider[1].addEventListener('click', function() {
   slider(reviewItems[0], reviewItems[2], reviewItems[1]);
 });
 
-sliderItems[2].addEventListener('click', function() {
+reviewsSlider[2].addEventListener('click', function() {
   slider(reviewItems[1], reviewItems[0], reviewItems[2]);
 });
 
@@ -56,3 +56,36 @@ function slider(hiddenSlide1, hiddenSlide2, shownSlide) {
   hiddenSlide2.classList.remove('reviews__item--shown');
   shownSlide.classList.add('reviews__item--shown');
 }
+
+var tariffFirst = document.querySelector('.tariffs__item--first');
+var tariffSecond = document.querySelector('.tariffs__item--second');
+var tariffThird = document.querySelector('.tariffs__item--third');
+var tariffsSlider = document.querySelectorAll('.tariffs__slider-item');
+
+tariffsSlider[0].addEventListener('click', function() {
+  tariffFirst.style = "left: 0;";
+  tariffSecond.style = "left: 100%;";
+  tariffThird.style = "left: 0;";
+  tariffFirst.classList.add('tariffs__item--active');
+  tariffSecond.classList.remove('tariffs__item--active');
+  tariffThird.classList.remove('tariffs__item--active');
+});
+
+tariffsSlider[1].addEventListener('click', function() {
+  tariffFirst.style = "left: -100%;";
+  tariffSecond.style = "left: 0;";
+  tariffThird.style = "left: 100%;";
+  tariffSecond.classList.add('tariffs__item--active');
+  tariffFirst.classList.remove('tariffs__item--active');
+  tariffThird.classList.remove('tariffs__item--active');
+});
+
+tariffsSlider[2].addEventListener('click', function() {
+  tariffFirst.style = "left: 0; opacity: 0";
+  tariffSecond.style = "left: -100%;";
+  tariffThird.style = "left: 0;";
+  tariffThird.classList.add('tariffs__item--active');
+  tariffSecond.classList.remove('tariffs__item--active');
+  tariffFirst.classList.remove('tariffs__item--active');
+});
+

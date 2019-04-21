@@ -209,15 +209,15 @@
             </ul>
           </div>
           <ul class="reviews__slider slider">
-            <li class="slider__item">
+            <li class="reviews__slider-item slider__item">
               <input type="radio" class="slider__input visually-hidden" name="slide" id="reviews-slide1" checked>
               <label for="reviews-slide1" class="slider__label visually-hidden">Первый слайд</label>
             </li>
-            <li class="slider__item">
+            <li class="reviews__slider-item slider__item">
               <input type="radio" class="slider__input visually-hidden" name="slide" id="reviews-slide2">
               <label for="reviews-slide2" class="slider__label visually-hidden">Второй слайд</label>
             </li>
-              <li class="slider__item">
+              <li class="reviews__slider-item slider__item">
               <input type="radio" class="slider__input visually-hidden" name="slide" id="reviews-slide3">
               <label for="reviews-slide3" class="slider__label visually-hidden">Третий слайд</label>
             </li>
@@ -226,60 +226,10 @@
       </section>
       <section class="tariffs">
         <h2 class="visually-hidden">Наши цены</h2>
-        <div class="wrapper">
+        <div class="wrapper tariffs--wrapper">
           <div class="tariffs__list-container">
-            <ul class="tariffs__list">
+            <ul class="tariffs__features">
               <li class="tariffs__item">
-                <div class="tariffs__amount">
-                  <p class="tariffs__name">
-                    Стандарт
-                  </p>
-                  <p class="tariffs__price">
-                    3,99 USD
-                  </p>
-                </div>
-                <div class="tariffs__options">
-                  <p class="tariffs__option">
-                    Розовый фильтр
-                  </p>
-                  <p class="tariffs__option">
-                    Смайлики
-                  </p>
-                  <p class="tariffs__option">
-                    Комментарии
-                  </p>
-                </div>
-              </li>
-              <li class="tariffs__item">
-                <div class="tariffs__amount">
-                  <p class="tariffs__name">
-                    Стандарт
-                  </p>
-                  <p class="tariffs__price">
-                    3,99 USD
-                  </p>
-                </div>
-                <div class="tariffs__options">
-                  <p class="tariffs__option">
-                    Розовый фильтр
-                  </p>
-                  <p class="tariffs__option">
-                    Смайлики
-                  </p>
-                  <p class="tariffs__option">
-                    Комментарии
-                  </p>
-                </div>
-              </li>
-              <li class="tariffs__item">
-                <div class="tariffs__amount">
-                  <p class="tariffs__name">
-                    Стандарт
-                  </p>
-                  <p class="tariffs__price">
-                    3,99 USD
-                  </p>
-                </div>
                 <div class="tariffs__options">
                   <p class="tariffs__option">
                     Розовый фильтр
@@ -293,19 +243,84 @@
                 </div>
               </li>
             </ul>
+            <ul class="tariffs__list">
+              <li class="tariffs__item tariffs__item--first">
+                <div class="tariffs__amount">
+                  <p class="tariffs__name">
+                    База
+                  </p>
+                  <p class="tariffs__price">
+                    1,99 USD
+                  </p>
+                </div>
+                <div class="tariffs__options">
+                  <p class="tariffs__option tariffs__option--yes">
+                    <span class="tariffs__text">Розовый фильтр</span>
+                  </p>
+                  <p class="tariffs__option tariffs__option--no">
+                    <span class="tariffs__text">Смайлики</span>
+                  </p>
+                  <p class="tariffs__option tariffs__option--no">
+                    <span class="tariffs__text">Комментарии</span>
+                  </p>
+                </div>
+              </li>
+              <li class="tariffs__item tariffs__item--second">
+                <div class="tariffs__amount tariffs__amount--hit">
+                  <p class="tariffs__name">
+                    Стандарт
+                  </p>
+                  <p class="tariffs__price">
+                    3,99 USD
+                  </p>
+                </div>
+                <div class="tariffs__options">
+                  <p class="tariffs__option tariffs__option--yes">
+                    <span class="tariffs__text">Розовый фильтр</span>
+                  </p>
+                  <p class="tariffs__option tariffs__option--yes">
+                    <span class="tariffs__text">Смайлики</span>
+                  </p>
+                  <p class="tariffs__option tariffs__option--no">
+                    <span class="tariffs__text">Комментарии</span>
+                  </p>
+                </div>
+              </li>
+              <li class="tariffs__item tariffs__item--third">
+                <div class="tariffs__amount">
+                  <p class="tariffs__name">
+                    Анлим
+                  </p>
+                  <p class="tariffs__price">
+                    9,99 USD
+                  </p>
+                </div>
+                <div class="tariffs__options">
+                  <p class="tariffs__option tariffs__option--yes">
+                    <span class="tariffs__text">Розовый фильтр</span>
+                  </p>
+                  <p class="tariffs__option tariffs__option--yes">
+                    <span class="tariffs__text">Смайлики</span>
+                  </p>
+                  <p class="tariffs__option tariffs__option--yes">
+                    <span class="tariffs__text">Комментарии</span>
+                  </p>
+                </div>
+              </li>
+            </ul>
           </div>
           <ul class="tariffs__slider slider">
-            <li class="slider__item">
-              <input type="radio" class="slider__input" name="slide" id="tariffs-slide1">
-              <label for="tariffs-slide1" class="slider__label">Первый слайд</label>
+            <li class="tariffs__slider-item slider__item">
+              <input type="radio" class="slider__input visually-hidden" name="slide" id="tariffs-slide1">
+              <label for="tariffs-slide1" class="slider__label visually-hidden">Первый слайд</label>
             </li>
-            <li class="slider__item">
-              <input type="radio" class="slider__input" name="slide" id="tariffs-slide2">
-              <label for="tariffs-slide2" class="slider__label">Второй слайд</label>
+            <li class="tariffs__slider-item slider__item">
+              <input type="radio" class="slider__input visually-hidden" name="slide" id="tariffs-slide2" checked>
+              <label for="tariffs-slide2" class="slider__label visually-hidden">Второй слайд</label>
             </li>
-              <li class="slider__item">
-              <input type="radio" class="slider__input" name="slide" id="tariffs-slide3">
-              <label for="tariffs-slide3" class="slider__label">Третий слайд</label>
+              <li class="tariffs__slider-item slider__item">
+              <input type="radio" class="slider__input visually-hidden" name="slide" id="tariffs-slide3">
+              <label for="tariffs-slide3" class="slider__label visually-hidden">Третий слайд</label>
             </li>
           </ul>
         </div>
