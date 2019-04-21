@@ -88,4 +88,3 @@ tariffsSlider[2].addEventListener('click', function() {
   tariffSecond.classList.remove('tariffs__item--active');
   tariffFirst.classList.remove('tariffs__item--active');
 });
-

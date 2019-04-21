@@ -17,7 +17,6 @@
 }
 
 .tariffs__amount--hit {
-
   &::before {
     position: absolute;
     content: "";
@@ -99,7 +98,6 @@
 
 
 @media (max-width: 659px) {
-
   .tariffs__option {
     text-transform: uppercase;
   }
@@ -191,7 +189,6 @@
 
   .tariffs__option {
     font-size: 14px;
-    padding: 0;
     padding: 5px 10px 2px 15px;
     min-height: 46px;
     border-right: none;
