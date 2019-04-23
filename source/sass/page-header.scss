@@ -20,6 +20,7 @@
 
   .page-header--no-js {
     min-height: 500px;
+    background-position: left 61%, center center;
   }
 
   .page-header__top {
@@ -39,7 +40,7 @@
   }
 
   .page-header__bg--no-js {
-    margin-bottom: 0;
+    margin-bottom: 395px;
   }
 }
 
@@ -62,12 +63,13 @@
     margin-bottom: 65px;
   }
 
-  .page-header__bg--no-js {
-    margin-bottom: 0;
+  .page-header--no-js {
+    background-size: auto, auto;
+    background-position: center bottom, center bottom;
   }
 
-  .page-header--no-js {
-    background-size: auto, cover;
+  .page-header--no-js .download {
+    min-height: 560px;
   }
 }
 
