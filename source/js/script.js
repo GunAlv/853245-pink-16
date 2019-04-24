@@ -7,7 +7,6 @@ header.classList.remove('page-header--no-js');
 headerBg.classList.remove('page-header__bg--no-js');
 menu.classList.remove('nav--no-js');
 
-
 menuBtn.addEventListener('click', function() {
   this.classList.toggle('toggle__button--opened');
   menu.classList.toggle('nav--opened');
@@ -56,43 +55,3 @@ function slider(hiddenSlide1, hiddenSlide2, shownSlide) {
   hiddenSlide2.classList.remove('reviews__item--shown');
   shownSlide.classList.add('reviews__item--shown');
 }
-
-
-var tariffsSlider = document.querySelectorAll('.tariffs__slider-item');
-var tariffList = document.querySelector('.tariffs__list');
-
-// tariffsSlider[0].addEventListener('click', function() {
-//   tariffList.classList.add('tariffs__list--move');
-// })
-
-for (n = 0; n < tariffsSlider; n++) {
-  console.log('saffasafsfasasfafs')
-}
-
-
-// tariffsSlider[0].addEventListener('click', function() {
-//   tariffFirst.style = "left: 0;";
-//   tariffSecond.style = "left: 100%;";
-//   tariffThird.style = "left: 0;";
-//   tariffFirst.classList.add('tariffs__item--active');
-//   tariffSecond.classList.remove('tariffs__item--active');
-//   tariffThird.classList.remove('tariffs__item--active');
-// });
-
-// tariffsSlider[1].addEventListener('click', function() {
-//   tariffFirst.style = "left: -100%;";
-//   tariffSecond.style = "left: 0;";
-//   tariffThird.style = "left: 100%;";
-//   tariffSecond.classList.add('tariffs__item--active');
-//   tariffFirst.classList.remove('tariffs__item--active');
-//   tariffThird.classList.remove('tariffs__item--active');
-// });
-
-// tariffsSlider[2].addEventListener('click', function() {
-//   tariffFirst.style = "left: 0; opacity: 0";
-//   tariffSecond.style = "left: -100%;";
-//   tariffThird.style = "left: 0;";
-//   tariffThird.classList.add('tariffs__item--active');
-//   tariffSecond.classList.remove('tariffs__item--active');
-//   tariffFirst.classList.remove('tariffs__item--active');
-// });

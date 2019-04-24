@@ -5,6 +5,7 @@
   background-image: url("../img/bg-curve.svg");
   background-repeat: no-repeat;
   background-position: center top;
+  overflow: hidden;
 }
 
 .tariffs__amount {
@@ -108,52 +109,7 @@
   .tariffs--wrapper {
     width: auto;
     padding: 0;
-    // padding-left: 20px;
   }
-
-  // .tariffs__list-container {
-  //   overflow: hidden;
-  //   margin-bottom: 40px;
-  //   padding-left: 20px;
-  //   // Было 320
-  //   // min-width: 300px;
-  // }
-
-  // .tariffs__list {
-  //   min-height: 280px;
-  //   // min-width: 280px;
-  //   // width: 9999px;
-  //   // display: flex;
-  //   width: auto;
-  //   position: relative;
-  // }
-
-  // .tariffs__item {
-  //   position: absolute;
-  //   width: 100%;
-  //   z-index: 1;
-  //   // min-width: 280px;
-
-  //   &--first {
-  //     // left: -70%;
-  //     left: -100%;
-  //   }
-
-  //   &--second {
-  //     left: 0;
-  //   }
-
-  //   &--third {
-  //     left: 100%;
-  //   }
-
-  //   &--active {
-  //     position: relative;
-  //     z-index: 3;
-  //     // animation: carusel 0.5s;
-  //     transition: 0.5s;
-  //   }
-  // }
 
   .tariffs__features {
     display: none;
