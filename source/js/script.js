@@ -55,3 +55,24 @@ function slider(hiddenSlide1, hiddenSlide2, shownSlide) {
   hiddenSlide2.classList.remove('reviews__item--shown');
   shownSlide.classList.add('reviews__item--shown');
 }
+
+var tariffsList = document.querySelector('.tariffs__list');
+var tariffsInputs = document.querySelectorAll('.tariffs__input');
+
+function tariffsSlide(hiddenTariff1, hiddenTariff2, shownTariff) {
+  tariffsList.classList.remove(hiddenTariff1);
+  tariffsList.classList.remove(hiddenTariff2);
+  tariffsList.classList.add(shownTariff);
+};
+
+tariffsInputs[0].addEventListener('click', function() {
+  tariffsSlide('tariffs__list--second', 'tariffs__list--third', 'tariffs__list--first');
+});
+
+tariffsInputs[1].addEventListener('click', function() {
+  tariffsSlide('tariffs__list--third', 'tariffs__list--first', 'tariffs__list--second');
+});
+
+tariffsInputs[2].addEventListener('click', function() {
+  tariffsSlide('tariffs__list--second', 'tariffs__list--first', 'tariffs__list--third');
+});

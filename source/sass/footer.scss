@@ -5,5 +5,28 @@
 @media (min-width: 660px) {
   .footer {
     display: block;
+    padding: 33px 0 51px;
+  }
+
+  .footer__flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer__social {
+    margin-top: 12px;
+    max-width: 300px;
+  }
+
+  .footer__copyright {
+    margin-top: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    padding: 60px 0 87px;
   }
 }

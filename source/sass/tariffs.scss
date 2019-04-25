@@ -128,16 +128,34 @@
     display: flex;
     // width: 320px;
     margin: 0 auto;
+    transition: 0.4s;
   }
 
-  .tariffs__list--move {
-    animation: tariffsSlider 0.5s;
+  .tariffs__list--first {
+    transform: translateX(0);
+  }
+
+  .tariffs__list--second {
+    transform: translateX(-280px);
+  }
+
+  .tariffs__list--third {
+    transform: translateX(-560px);
   }
 
   .tariffs__item {
     min-width: 280px;
     margin-bottom: 40px;
   }
+
+  // @keyframes tariffs {
+  //   from {
+  //     transform: translateX(0);
+  //   }
+  //   to {
+  //     transform: translateX(-280px);
+  //   }
+  // }
 }
 
 @media (min-width: 660px) {
