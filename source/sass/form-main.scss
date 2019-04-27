@@ -1,0 +1,10 @@
+.form-main {
+  overflow: hidden;
+}
+
+@media (max-width: 659px) {
+  .form-main--wrapper {
+    width: auto;
+    padding: 0;
+  }
+}

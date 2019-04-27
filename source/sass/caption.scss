@@ -1,6 +1,59 @@
+.caption {
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
 .caption__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
   text-align: center;
+  margin: 0;
+}
+
+.caption--photo {
+  padding: 0 15px;
+  margin-bottom: 45px;
+}
+
+.caption__span {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .caption {
+    margin-bottom: 30px;
+  }
+
+  .caption__text {
+    font-size: 18px;
+    width: 490px;
+    margin: 0 auto;
+  }
+
+  .caption__span {
+    display: inline;
+  }
+
+  .caption--photo {
+    margin-bottom: 73px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .caption {
+    margin-bottom: 73px;
+  }
+
+  .caption__text {
+    width: 760px;
+  }
+
+  .caption--photo .caption__text {
+    width: 580px;
+  }
+
+  .caption--photo {
+    margin-bottom: 85px;
+  }
 }
