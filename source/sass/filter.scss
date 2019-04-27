@@ -1,22 +1,295 @@
+.filter {
+  margin-top: 37px;
+  margin-bottom: 40px;
+}
+
 .filter__title {
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
+  margin: 0;
+  text-align: center;
 }
 
 .filter__form-container {
   background-color: $grey;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+    opacity: 0.1;
+    bottom: 200px;
+  }
 }
 
 .filter__button {
+  padding: 16px 10px;
+  min-width: 280px;
+  // background-image: url("../img/icon-editor-contrast.svg");
+
   &--submit {
     color: $pink;
     border: 3px solid $pink;
+    margin-bottom: 10px;
   }
 
   &--reset {
     color: #283645;
     border: 3px solid #283645;
     opacity: 0.1;
+  }
+}
+
+.filter__img {
+  display: block;
+}
+
+.filter__img-container {
+  margin-bottom: 40px;
+}
+
+.filter__title-span {
+  display: block;
+}
+
+.filter__options-list {
+  padding: 0 20px;
+}
+
+.filter__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 16px;
+  margin-left: -36px;
+  margin-bottom: 40px;
+}
+
+.filter__item {
+  margin-left: 36px;
+}
+
+.filter__title-container {
+  margin-bottom: 44px;
+}
+
+.filter__svg-container {
+  width: 44px;
+  height: 44px;
+  position: relative;
+}
+
+.filter__svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  cursor: pointer;
+  fill: $blue;
+  opacity: 0.3;
+
+  &:hover {
+    fill: $blue;
+    opacity: 0.5;
+  }
+
+  &:active {
+    fill: $pink;
+    opacity: 1;
+  }
+}
+
+.filter__item .scale {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .filter__img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .filter__img-container {
+    margin-bottom: 0;
+  }
+
+  .filter__form-container::after {
+    display: none;
+  }
+
+  .filter__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .filter__flex-column {
+    width: 280px;
+  }
+
+  .filter__options-list {
+    padding: 0;
+  }
+
+  .filter__list {
+    margin-bottom: 40px;
+    flex-direction: column;
+    padding: 0;
+    padding-top: 8px;
+    margin-left: 0;
+  }
+
+  .filter__item {
+    margin-left: 0;
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 18px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #000000;
+      opacity: 0.1;
+      bottom: -20px;
+      left: 0;
+    }
+  }
+
+  .filter__svg--crop {
+    width: 22px;
+    height: 22px;
+  }
+
+  .filter__svg--fill {
+    width: 24px;
+    height: 22px;
+  }
+
+  .filter__svg--editor {
+    width: 16px;
+    height: 16px;
+  }
+
+  .filter__item .scale {
+    display: block;
+    width: 202px;
+    margin-bottom: 0;
+  }
+
+  .filter__svg-container {
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    margin-top: 2px;
+  }
+
+  .filter__title {
+    font-size: 18px;
+  }
+
+  .filter {
+    margin-top: 42px;
+    margin-bottom: 0;
+  }
+
+  .filter__title-container {
+    margin-bottom: 65px;
+  }
+
+  .filter__form-container {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  .filter__button {
+    min-width: 260px;
+
+    &--submit {
+      margin-bottom: 24px;
+    }
+  }
+
+  .filter__buttons {
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .filter__form-container {
+    background-color: #ffffff;
+  }
+
+  .filter__flex {
+    background-color: $grey;
+    padding: 60px 60px 57px 80px;
+  }
+
+  .filter__buttons {
+    padding: 0;
+  }
+
+  .filter__list {
+    margin-bottom: 115px;
+  }
+
+  .filter__flex-column {
+    width: 415px;
+  }
+
+  .filter__svg--crop {
+    width: 44px;
+    height: 44px;
+  }
+
+  .filter__svg--fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  .filter__svg--editor {
+    width: 32px;
+    height: 32px;
+  }
+
+  .filter__item .scale {
+    width: 288px;
+  }
+
+  .filter__button {
+    min-width: 183px;
+
+    &--submit {
+      margin-bottom: 0;
+    }
+
+    &--reset {
+      margin-left: 44px;
+    }
+  }
+
+  .filter {
+    margin-top: 20px;
+  }
+
+  .filter__title-container {
+    margin-bottom: 0;
+  }
+
+  .filter__svg-container {
+    margin-left: 10px;
+  }
+
+  .filter__form-container {
+    padding-bottom: 35px;
   }
 }

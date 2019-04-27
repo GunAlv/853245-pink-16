@@ -1,0 +1,54 @@
+.scale {
+  width: 240px;
+  margin-bottom: 73px;
+}
+
+.scale__custom {
+  position: relative;
+  width: 240px;
+}
+
+.scale__custom-line {
+  width: 240px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.scale__handle {
+  position: absolute;
+  top: -6px;
+  right: 32px;
+  width: 14px;
+  height: 14px;
+  background-color: #ffffff;
+  border: 2px solid $pink;
+  border-radius: 50%;
+  transition: 0.1s;
+
+  &:active {
+    background-color: $pink;
+  }
+}
+
+@media (min-width: 660px) {
+  .scale {
+    margin-top: 12px;
+  }
+
+  .scale--shown {
+    display: none;
+  }
+
+  .scale__custom,
+  .scale__custom-line {
+    width: 202px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .scale__custom,
+  .scale__custom-line {
+    width: 288px;
+  }
+}

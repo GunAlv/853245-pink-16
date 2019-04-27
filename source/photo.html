@@ -272,7 +272,7 @@
       <div class="wrapper">
         <div class="filter__title-container">
           <h2 class="filter__title">
-            Затмите их всех!
+            <span class="filter__title-span">Затмите их всех!</span>
             Выкладывайте все, что накопилось в телефоне!
           </h2>
         </div>
@@ -282,29 +282,69 @@
           <div class="wrapper">
             <div class="filter__flex">
               <div class="filter__img-container">
-                <img src="#" alt="Обрабатываемое фото" class="filter__img">
+                <!-- <img src="#" alt="Обрабатываемое фото" class="filter__img"> -->
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+                  <img src="img/photo-road-mobile@1x.jpg" alt="Обрабатываемое фото" class="filter__img" width="280" height="374">
+                </picture>
               </div>
-              <div class="filter__options">
-                <div class="filter__options-list">
-                  <ul class="filter__list">
-                    <li class="filter__item options">
-                      <button type="button" class="options__option" aria-label="Обрезать фотографию"></button>
-                    </li>
-                    <li class="filter__item options">
-                      <button type="button" class="options__option" aria-label="Залить фотографию"></button>
-                    </li>
-                    <li class="filter__item options">
-                      <button type="button" class="options__option" aria-label="Изменить контрастность фотографии"></button>
-                    </li>
-                  </ul>
-                  <div class="scale">
-                    <input type="range" class="scale__range" name="range">
+              <div class="filter__flex-column">
+                <div class="filter__options">
+                  <div class="filter__options-list">
+                    <ul class="filter__list">
+                      <li class="filter__item">
+                        <div class="filter__svg-container">
+                          <svg class="filter__svg filter__svg--crop" width="44" height="44">
+                            <use xlink:href="img/symbol-defs.svg#crop"></use>
+                          </svg>
+                        </div>
+                        <div class="scale">
+                          <div class="scale__custom">
+                            <div class="scale__custom-line"></div>
+                            <div class="scale__handle"></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="filter__item">
+                        <div class="filter__svg-container">
+                          <svg class="filter__svg filter__svg--fill" width="48" height="43">
+                            <use xlink:href="img/symbol-defs.svg#fill"></use>
+                          </svg>
+                        </div>
+                        <div class="scale">
+                          <div class="scale__custom">
+                            <div class="scale__custom-line"></div>
+                            <div class="scale__handle"></div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="filter__item">
+                        <div class="filter__svg-container">
+                          <svg class="filter__svg filter__svg--editor" width="32" height="32">
+                            <use xlink:href="img/symbol-defs.svg#editor"></use>
+                          </svg>
+                        </div>
+                        <div class="scale">
+                          <div class="scale__custom">
+                            <div class="scale__custom-line"></div>
+                            <div class="scale__handle"></div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="scale scale--shown">
+                      <div class="scale__custom">
+                        <div class="scale__custom-line"></div>
+                        <div class="scale__handle"></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="filter__buttons">
-                <button type="submit" class="filter__button filter__button--submit button">Запостить</button>
-                <button type="reset" class="filter__button filter__button--reset button">Отмена</button>
+                <div class="filter__buttons">
+                  <button type="submit" class="filter__button filter__button--submit button">Запостить</button>
+                  <button type="reset" class="filter__button filter__button--reset button">Отмена</button>
+                </div>
               </div>
             </div>
           </div>
