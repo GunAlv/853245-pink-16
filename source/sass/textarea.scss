@@ -1,10 +1,12 @@
 .textarea {
   font-size: 18px;
+  color: $blue;
   border: 2px solid #e5e5e5;
   margin-top: 15px;
   width: 100%;
   min-height: 197px;
   padding: 19px 25px 10px 19px;
+  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .textarea:hover {
