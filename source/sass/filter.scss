@@ -31,7 +31,7 @@
 .filter__button {
   padding: 16px 10px;
   min-width: 280px;
-  // background-image: url("../img/icon-editor-contrast.svg");
+  transition: 0.1s;
 
   &--submit {
     color: $pink;
@@ -40,10 +40,34 @@
   }
 
   &--reset {
-    color: #283645;
+    color: $blue;
     border: 3px solid #283645;
     opacity: 0.1;
   }
+}
+
+.filter__button--submit:hover,
+.filter__button--submit:focus {
+  background-color: $pink;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.filter__button--submit:active {
+  color: rgba(#ffffff, 0.3);
+}
+
+.filter__button--reset:hover,
+.filter__button--reset:focus {
+  opacity: 0.3;
+  color: $blue;
+  box-shadow: none;
+}
+
+.filter__button--reset:active {
+  background-color: $blue;
+  opacity: 0.3;
+  color: rgba(#ffffff, 0.3);
 }
 
 .filter__img {
@@ -225,10 +249,6 @@
 }
 
 @media (min-width: 1200px) {
-  .filter__form-container {
-    background-color: #ffffff;
-  }
-
   .filter__flex {
     background-color: $grey;
     padding: 60px 60px 57px 80px;
@@ -290,6 +310,7 @@
   }
 
   .filter__form-container {
+    background-color: #ffffff;
     padding-bottom: 35px;
   }
 }

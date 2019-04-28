@@ -56,10 +56,10 @@
     background-position: center 650%;
   }
 
-  .page-header--no-js.page-header--diff {
-    min-height: 696px;
-    background-position: center -750%;
-  }
+  // .page-header--no-js.page-header--diff {
+  //   min-height: 696px;
+  //   background-position: center -750%;
+  // }
 }
 
 @media (min-width: 660px) {
@@ -94,6 +94,11 @@
     background-image: none, url("../img/bg-back-tablet@1x.jpg");
     min-height: 440px;
   }
+
+  .page-header--no-js.page-header--diff {
+    min-height: 696px;
+    background-position: center -750%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -121,10 +126,13 @@
     margin-bottom: 80px;
   }
 
-  .page-header--diff {
+  .page-header--diff,
+  .page-header--no-js.page-header--diff {
     background-image: none, url("../img/bg-back-desktop@1x.jpg");
     min-height: 395px;
     background-size: auto;
+    // background-position: 0 0;
+    background-position: center 0;
     // background-position: center -100%;
   }
 }
