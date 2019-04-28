@@ -29,9 +29,9 @@
   }
 }
 
-// .form__item--grey .form__legend {
-//   background-color: $grey;
-// }
+.form__span--hidden {
+  display: none;
+}
 
 .form__button {
   margin: 0 auto;
@@ -182,6 +182,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 50px;
+    margin-top: 20px;
   }
 
   .form__item--information .input__label {
@@ -214,6 +215,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     // overflow: hidden;
+  }
+
+  .form__span--hidden {
+    display: inline;
   }
 
   .form .form__item--information,
