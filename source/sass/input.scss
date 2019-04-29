@@ -36,6 +36,7 @@
 
   .input__custom-input {
     margin-left: 20px;
+    height: 61px;
   }
 
   .input--column {
@@ -47,30 +48,31 @@
     position: relative;
   }
 
-  .input--column::before {
+  .input--column::after {
     position: absolute;
     content: "";
-    top: 1px;
-    right: 0;
     width: 58px;
-    height: 58px;
-    background-color: #e5e5e5;
+    height: 57px;
+    background-color: $grey;
+    top: 2px;
+    right: 2px;
   }
 
-  .input--column::after {
+  .input--column::before {
     position: absolute;
     content: "";
     top: 22px;
     right: 20px;
+    z-index: 1;
   }
 
-  .input--column-phone::after {
+  .input--column-phone::before {
     background-image: url("../img/icon-phone.svg");
     width: 20px;
     height: 19px;
   }
 
-  .input--column-mail::after {
+  .input--column-mail::before {
     background-image: url("../img/icon-mail.svg");
     width: 18px;
     height: 13px;

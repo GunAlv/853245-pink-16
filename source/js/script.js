@@ -76,3 +76,6 @@ tariffsInputs[1].addEventListener('click', function() {
 tariffsInputs[2].addEventListener('click', function() {
   tariffsSlide('tariffs__list--second', 'tariffs__list--first', 'tariffs__list--third');
 });
+
+var mapContainer = document.querySelector('.map__img-container');
+mapContainer.classList.remove('map__img-container--no-js');
