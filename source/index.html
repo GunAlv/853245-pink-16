@@ -3,20 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <div class="wrapper">
-        <div class="page-header__flex">
-          <a class="page-header__logo logo">
-            <img src="#" class="logo__img" width="75" height="22" alt="Логотип сайта мобильного приложения Pink">
-          </a>
-          <div class="page-header__nav nav">
-            <button type="button" class="nav__toggle" aria-label="Кнопка меню">
-            </button>
-            <nav>
+    <svg style="display:none">
+      <symbol id="copyright" viewBox="0 0 27 34">
+        <path d="M13.62.017L13.472 0 0 1.412v24.661l13.472 8.017 13.43-7.99.042-.026V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.547-1.212 11.547 1.212v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.013 1.415 5.904 3.513-.86.507-5.031-2.992-.013 1.415 3.827 2.275-.782.523-3.032-1.787-.013 1.413 1.852 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.015 1.044-7.941-4.728-.015 1.416 7.979 4.796.017 1.076-7.972-4.741-.013 1.415 8.021 4.821.045.026 8.143-4.872v-1.268l-.011-.148v-3.761l3.415-2.036v10.02L13.472 31.85 1.925 24.979v-9.852z"/>
+      </symbol>
+    </svg>
+    <header class="page-header page-header--no-js">
+      <div class="page-header__bg page-header__bg--no-js">
+        <div class="wrapper page-header--wrapper">
+          <div class="page-header__top">
+            <a class="page__header-logo logo">
+              <svg class="logo__svg" width="146.3" height="40.375" viewBox="0 0 147 40">
+                <g class="logo__text" fill="#FFF">
+                  <path d="M71.874 18.661c0-.708.58-1.288 1.256-1.288h7.18c5.087 0 8.436 2.704 8.436 7.146v.064c0 4.861-4.057 7.373-8.854 7.373h-5.475v6.825c0 .708-.58 1.288-1.288 1.288-.676 0-1.256-.58-1.256-1.288v-20.12zm8.114 10.98c3.734 0 6.182-1.996 6.182-4.959v-.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917h5.57v-.001zM93.603 18.5c0-.708.579-1.288 1.255-1.288.709 0 1.288.58 1.288 1.288v20.283a1.29 1.29 0 0 1-1.288 1.287c-.676 0-1.255-.579-1.255-1.287V18.5zM102.744 18.532c0-.676.58-1.256 1.256-1.256h.354c.58 0 .935.29 1.288.74l13.684 17.45V18.468c0-.676.547-1.256 1.256-1.256.676 0 1.224.58 1.224 1.256v20.349c0 .676-.481 1.19-1.158 1.19h-.129c-.548 0-.935-.321-1.319-.772l-13.975-17.868v17.45c0 .676-.547 1.256-1.256 1.256-.676 0-1.223-.58-1.223-1.256V18.532h-.002zM128.173 18.5c0-.708.58-1.288 1.257-1.288.708 0 1.286.58 1.286 1.288v12.331l12.848-13.168c.29-.257.579-.451.998-.451.676 0 1.225.612 1.225 1.256 0 .354-.162.644-.42.901l-7.984 7.92 8.564 10.561c.225.291.354.547.354.935 0 .676-.578 1.288-1.286 1.288-.483 0-.806-.258-1.03-.58l-8.402-10.463-4.863 4.861v4.894a1.29 1.29 0 0 1-1.286 1.288c-.677 0-1.257-.58-1.257-1.288V18.5h-.004z"/>
+                </g>
+                <path class="logo__point" fill="#D22856" d="M98.498 9.875a3.623 3.623 0 0 1-3.623-3.624 3.625 3.625 0 0 1-3.625 3.624 3.625 3.625 0 0 1 3.625 3.624 3.623 3.623 0 0 1 3.623-3.624z"/>
+                <g class="logo__glasses" fill="#FFF">
+                  <path d="M43.094 19.313c.246 0 .489.014.73.033a2.491 2.491 0 0 0-2.136-1.221 1.994 1.994 0 0 1-1.884-1.354c-.727.208-1.425.482-2.089.816.062.017.122.038.188.038a2 2 0 0 1 2 2c0 .096-.015.188-.028.281 1-.382 2.084-.593 3.219-.593z"/>
+                  <path d="M60.462 28.016L55.287 6.651C54.926 4.303 52.694 0 46.688 0a1.5 1.5 0 1 0 0 3c4.856 0 5.575 3.729 5.639 4.143l4.767 19.701h-2.073c-.445-3.557-2.453-6.628-5.305-8.522a2.503 2.503 0 0 0-1.529 2.303c0 .088-.015.171-.026.256a9.034 9.034 0 0 1 3.829 5.964c.082.489.135.988.135 1.5s-.053 1.012-.135 1.5c-.716 4.272-4.421 7.531-8.896 7.531-4.475 0-8.181-3.259-8.896-7.531-.082-.488-.135-.988-.135-1.5s.053-1.011.135-1.5a8.949 8.949 0 0 1 .808-2.483 1.995 1.995 0 0 1-1.852-1.985.743.743 0 0 0-.192-.489 11.954 11.954 0 0 0-1.795 4.958h-1.82c-.741-5.927-5.802-10.531-11.927-10.531S6.235 20.917 5.493 26.844H3.42L8.187 7.143C8.25 6.729 8.97 3 13.826 3a1.5 1.5 0 1 0 0-3C7.82 0 5.588 4.303 5.227 6.651L.052 28.016c-.266 1.109.531 1.826 1.426 1.826.012 0 .023.004.036.004h3.982c.079.628.215 1.237.387 1.831a.726.726 0 0 0 .102-.354 2 2 0 0 1 2-2c.166 0 .324.025.478.063a8.337 8.337 0 0 1-.074-1.042c0-.512.053-1.011.135-1.5.715-4.271 4.421-7.531 8.896-7.531s8.18 3.26 8.896 7.531c.082.489.135.988.135 1.5s-.053 1.012-.135 1.5c-.715 4.272-4.421 7.531-8.896 7.531a8.959 8.959 0 0 1-5.386-1.794c-.35.302-.8.491-1.299.491a.75.75 0 0 0-.749.748c0 .29-.065.564-.176.812a11.94 11.94 0 0 0 7.614 2.743c6.125 0 11.185-4.604 11.927-10.53h1.814c.742 5.926 5.802 10.53 11.927 10.53s11.186-4.604 11.927-10.53H59c.012 0 .023-.004.036-.004.895.001 1.692-.716 1.426-1.825z"/>
+                </g>
+                <path class="logo__glasses-nopoint" fill="#FFF" d="M60.462 28.016L55.287 6.651C54.926 4.303 52.694 0 46.688 0a1.5 1.5 0 1 0 0 3c4.856 0 5.575 3.729 5.639 4.143l4.767 19.701h-2.073c-.742-5.927-5.802-10.531-11.927-10.531s-11.186 4.604-11.927 10.531h-1.82c-.741-5.927-5.802-10.531-11.927-10.531S6.235 20.917 5.493 26.844H3.42L8.187 7.143C8.25 6.729 8.97 3 13.826 3a1.5 1.5 0 1 0 0-3C7.82 0 5.588 4.303 5.227 6.651L.052 28.016c-.266 1.109.531 1.826 1.426 1.826.012 0 .023.004.036.004h3.982c.741 5.926 5.802 10.53 11.927 10.53s11.185-4.604 11.927-10.53h1.814c.742 5.926 5.802 10.53 11.927 10.53s11.186-4.604 11.927-10.53H59c.012 0 .023-.004.036-.004.895 0 1.692-.717 1.426-1.826zm-34.147 1.828c-.715 4.272-4.421 7.531-8.896 7.531-4.475 0-8.18-3.259-8.896-7.531-.082-.488-.135-.988-.135-1.5s.053-1.011.135-1.5c.715-4.271 4.421-7.531 8.896-7.531 4.475 0 8.18 3.26 8.896 7.531.082.489.135.988.135 1.5s-.053 1.011-.135 1.5zm25.675 0c-.716 4.272-4.421 7.531-8.896 7.531-4.475 0-8.181-3.259-8.896-7.531-.082-.488-.135-.988-.135-1.5s.053-1.011.135-1.5c.716-4.271 4.421-7.531 8.896-7.531 4.475 0 8.181 3.26 8.896 7.531.082.489.135.988.135 1.5s-.053 1.011-.135 1.5z"/>
+                <path class="logo__points" fill="#D22856" d="M50.686 16.125a4.499 4.499 0 0 1-4.499-4.499 4.499 4.499 0 0 1-4.499 4.499 4.499 4.499 0 0 1 4.499 4.499 4.498 4.498 0 0 1 4.499-4.499zM37.904 19.626a2.748 2.748 0 0 1-2.749-2.749 2.748 2.748 0 0 1-2.749 2.749 2.747 2.747 0 0 1 2.749 2.749 2.748 2.748 0 0 1 2.749-2.749zM10.734 34.072a2.748 2.748 0 0 1-2.749-2.75c0 1.52-1.23 2.75-2.749 2.75a2.747 2.747 0 0 1 2.749 2.748 2.748 2.748 0 0 1 2.749-2.748z"/>
+              </svg>
+            </a>
+            <div class="page-header__toggle-container toggle">
+              <button type="button" class="page-header__toggle toggle__button" aria-label="Открыть/закрыть меню">
+              </button>
+            </div>
+          </div>
+          <div class="nav nav--no-js">
+            <nav class="nav__container">
               <ul class="nav__list">
                 <li class="nav__item">
                   <a class="nav__link nav__link--current">
@@ -34,8 +55,8 @@
                   </a>
                 </li>
                 <li class="nav__item">
-                  <a href="#" class="nav__link">
-                    Html Academy
+                  <a href="https://up.htmlacademy.ru/adaptive/16" class="nav__link">
+                    HTML Academy
                   </a>
                 </li>
               </ul>
@@ -44,24 +65,33 @@
         </div>
       </div>
       <section class="download">
-        <h2 class="visually-hidden">
-          Ссылки на скачивание приложения
-        </h2>
         <div class="wrapper">
+          <h2 class="visually-hidden">
+            Ссылки на скачивание приложения
+          </h2>
           <div class="download__container">
+            <h3 class="download__title title">
+              Взгляните на жизнь иначе!
+            </h3>
             <a href="#" class="download__button button">
               Скачать приложение
             </a>
             <div class="download__list-container">
               <ul class="download__list">
                 <li class="download__item">
-                  <a href="#" class="download__link button" aria-label="Ссылка для ios"></a>
+                  <a href="#" class="download__link" aria-label="Ссылка для ios">
+                    <img src="img/logo-apple.svg" alt="Pink для Apple" class="download__img" width="47" height="56">
+                  </a>
                 </li>
                 <li class="download__item">
-                  <a href="#" class="download__link button" aria-label="Ссылка для android"></a>
+                  <a href="#" class="download__link" aria-label="Ссылка для android">
+                    <img src="img/logo-android.svg" alt="Pink для Android" class="download__img" width="43" height="47">
+                  </a>
                 </li>
                 <li class="download__item">
-                  <a href="#" class="download__link button" aria-label="Ссылка для windows"></a>
+                  <a href="#" class="download__link" aria-label="Ссылка для microsoft">
+                    <img src="img/logo-microsoft.svg" alt="Pink для Microsoft" class="download__img" width="44" height="41">
+                  </a>
                 </li>
               </ul>
             </div>
@@ -82,10 +112,10 @@
         </h2>
         <div class="wrapper">
           <div class="advantages__texts">
-            <p class="advantages__text">
+            <p class="advantages__title title">
               Устали от серости мегаполиса?
             </p>
-            <p class="advantages__text">
+            <p class="advantages__title title">
               Нам есть, что вам предложить!
             </p>
           </div>
@@ -95,6 +125,7 @@
             <div class="advantages__list-container">
               <ul class="advantages__list">
                 <li class="advantages__item">
+                  <img class="advantages__img advantages__img--desktop" src="img/iphone-screen-1-desktop@1x.png" alt="Изображение интерфейса приложения" width="292" height="302">
                   <p class="advantages__caption">
                     Поднимает настроение
                   </p>
@@ -103,6 +134,7 @@
                   </p>
                 </li>
                 <li class="advantages__item">
+                  <img class="advantages__img advantages__img--desktop" src="img/iphone-screen-2-desktop@1x.png" alt="Изображение интерфейса приложения" width="292" height="302">
                   <p class="advantages__caption">
                     Меняет мир вокруг
                   </p>
@@ -111,15 +143,35 @@
                   </p>
                 </li>
                 <li class="advantages__item">
+                  <img class="advantages__img advantages__img--mobile" src="img/iphone-screen-mobile@1x.png" alt="Изображение интерфейса приложения" width="157" height="282">
+                  <img class="advantages__img advantages__img--tablet" src="img/iphone-screen-3-tablet@1x.png" alt="Изображение интерфейса приложения" width="268" height="481">
+                  <img class="advantages__img advantages__img--desktop" src="img/iphone-screen-3-desktop@1x.png" alt="Изображение интерфейса приложения" width="292" height="302">
                   <p class="advantages__caption">
                     Заводит новых друзей
                   </p>
                   <p class="advantages__descript">
                     Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
                   </p>
-                  <img src="#" alt="Изображение интерфейса приложения">
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+        <div class="advantages__effect">
+          <div class="wrapper">
+            <div class="advantages__effect-texts">
+              <p class="advantages__effect-title">
+                Эффект<br> на 24 часа!
+              </p>
+              <p class="advantages__descript advantages__descript--effect">
+                Британские ученые провели исследования
+                и доказали, что положительный эффект
+                от использования приложения длится
+                целые сутки!
+              </p>
+              <a href="#" class="advantages__link link">
+                Узнать больше об исследовании
+              </a>
             </div>
           </div>
         </div>
@@ -129,104 +181,69 @@
           Отзывы
         </h2>
         <div class="wrapper">
-          <ul class="reviews__list">
-            <li class="reviews__item">
-              <p class="reviews__author">
-                Николай Петров
-              </p>
-              <p class="reviews__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-              </p>
-            </li>
-            <li class="reviews__item">
-              <p class="reviews__author">
-                Николай Петров
-              </p>
-              <p class="reviews__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-              </p>
-            </li>
-            <li class="reviews__item">
-              <p class="reviews__author">
-                Николай Петров
-              </p>
-              <p class="reviews__text">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-              </p>
-            </li>
-          </ul>
+          <div class="reviews__list-container">
+            <button type="button" class="reviews__button reviews__button--prev" aria-label="Кнопка слайдера назад">
+            </button>
+            <button type="button" class="reviews__button reviews__button--next" aria-label="Кнопка слайдера вперед">
+            </button>
+            <ul class="reviews__list">
+              <li class="reviews__item reviews__item--shown">
+                <p class="reviews__author">
+                  Николай Петров
+                  <span class="reviews__background">
+                    25 лет, водитель травмая
+                  </span>
+                </p>
+                <p class="reviews__text">
+                  «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                </p>
+              </li>
+              <li class="reviews__item">
+                <p class="reviews__author">
+                  Маша Залупова
+                  <span class="reviews__background">
+                    23 года, мастер ноготочков
+                  </span>
+                </p>
+                <p class="reviews__text">
+                  «Развлекаюсь в перерывах между клиентами»
+                </p>
+              </li>
+              <li class="reviews__item">
+                <p class="reviews__author">
+                  Хулио Санчес
+                  <span class="reviews__background">
+                    32 года, альфонс
+                  </span>
+                </p>
+                <p class="reviews__text">
+                  «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                </p>
+              </li>
+            </ul>
+          </div>
           <ul class="reviews__slider slider">
-            <li class="slider__item">
-              <input type="radio" class="slider__input" name="slide" id="reviews-slide1">
-              <label for="reviews-slide1" class="slider__label">Первый слайд</label>
+            <li class="reviews__slider-item slider__item">
+              <input type="radio" class="slider__input visually-hidden" name="slide" id="reviews-slide1" checked>
+              <label for="reviews-slide1" class="slider__label visually-hidden">Первый слайд</label>
             </li>
-            <li class="slider__item">
-              <input type="radio" class="slider__input" name="slide" id="reviews-slide2">
-              <label for="reviews-slide2" class="slider__label">Второй слайд</label>
+            <li class="reviews__slider-item slider__item">
+              <input type="radio" class="slider__input visually-hidden" name="slide" id="reviews-slide2">
+              <label for="reviews-slide2" class="slider__label visually-hidden">Второй слайд</label>
             </li>
-              <li class="slider__item">
-              <input type="radio" class="slider__input" name="slide" id="reviews-slide3">
-              <label for="reviews-slide3" class="slider__label">Третий слайд</label>
+              <li class="reviews__slider-item slider__item">
+              <input type="radio" class="slider__input visually-hidden" name="slide" id="reviews-slide3">
+              <label for="reviews-slide3" class="slider__label visually-hidden">Третий слайд</label>
             </li>
           </ul>
         </div>
       </section>
       <section class="tariffs">
         <h2 class="visually-hidden">Наши цены</h2>
-        <div class="wrapper">
+        <div class="wrapper tariffs--wrapper">
           <div class="tariffs__list-container">
-            <ul class="tariffs__list">
+            <ul class="tariffs__features">
               <li class="tariffs__item">
-                <div class="tariffs__amount">
-                  <p class="tariffs__name">
-                    Стандарт
-                  </p>
-                  <p class="tariffs__price">
-                    3,99 USD
-                  </p>
-                </div>
-                <div class="tariffs__options">
-                  <p class="tariffs__option">
-                    Розовый фильтр
-                  </p>
-                  <p class="tariffs__option">
-                    Смайлики
-                  </p>
-                  <p class="tariffs__option">
-                    Комментарии
-                  </p>
-                </div>
-              </li>
-              <li class="tariffs__item">
-                <div class="tariffs__amount">
-                  <p class="tariffs__name">
-                    Стандарт
-                  </p>
-                  <p class="tariffs__price">
-                    3,99 USD
-                  </p>
-                </div>
-                <div class="tariffs__options">
-                  <p class="tariffs__option">
-                    Розовый фильтр
-                  </p>
-                  <p class="tariffs__option">
-                    Смайлики
-                  </p>
-                  <p class="tariffs__option">
-                    Комментарии
-                  </p>
-                </div>
-              </li>
-              <li class="tariffs__item">
-                <div class="tariffs__amount">
-                  <p class="tariffs__name">
-                    Стандарт
-                  </p>
-                  <p class="tariffs__price">
-                    3,99 USD
-                  </p>
-                </div>
                 <div class="tariffs__options">
                   <p class="tariffs__option">
                     Розовый фильтр
@@ -240,19 +257,84 @@
                 </div>
               </li>
             </ul>
+            <ul class="tariffs__list">
+              <li class="tariffs__item tariffs__item--first">
+                <div class="tariffs__amount">
+                  <p class="tariffs__name">
+                    База
+                  </p>
+                  <p class="tariffs__price">
+                    1,99 USD
+                  </p>
+                </div>
+                <div class="tariffs__options">
+                  <p class="tariffs__option tariffs__option--yes">
+                    <span class="tariffs__text">Розовый фильтр</span>
+                  </p>
+                  <p class="tariffs__option tariffs__option--no">
+                    <span class="tariffs__text">Смайлики</span>
+                  </p>
+                  <p class="tariffs__option tariffs__option--no">
+                    <span class="tariffs__text">Комментарии</span>
+                  </p>
+                </div>
+              </li>
+              <li class="tariffs__item tariffs__item--second">
+                <div class="tariffs__amount tariffs__amount--hit">
+                  <p class="tariffs__name">
+                    Стандарт
+                  </p>
+                  <p class="tariffs__price">
+                    3,99 USD
+                  </p>
+                </div>
+                <div class="tariffs__options">
+                  <p class="tariffs__option tariffs__option--yes">
+                    <span class="tariffs__text">Розовый фильтр</span>
+                  </p>
+                  <p class="tariffs__option tariffs__option--yes">
+                    <span class="tariffs__text">Смайлики</span>
+                  </p>
+                  <p class="tariffs__option tariffs__option--no">
+                    <span class="tariffs__text">Комментарии</span>
+                  </p>
+                </div>
+              </li>
+              <li class="tariffs__item tariffs__item--third">
+                <div class="tariffs__amount">
+                  <p class="tariffs__name">
+                    Анлим
+                  </p>
+                  <p class="tariffs__price">
+                    9,99 USD
+                  </p>
+                </div>
+                <div class="tariffs__options">
+                  <p class="tariffs__option tariffs__option--yes">
+                    <span class="tariffs__text">Розовый фильтр</span>
+                  </p>
+                  <p class="tariffs__option tariffs__option--yes">
+                    <span class="tariffs__text">Смайлики</span>
+                  </p>
+                  <p class="tariffs__option tariffs__option--yes">
+                    <span class="tariffs__text">Комментарии</span>
+                  </p>
+                </div>
+              </li>
+            </ul>
           </div>
           <ul class="tariffs__slider slider">
-            <li class="slider__item">
-              <input type="radio" class="slider__input" name="slide" id="tariffs-slide1">
-              <label for="tariffs-slide1" class="slider__label">Первый слайд</label>
+            <li class="tariffs__slider-item slider__item">
+              <input type="radio" class="slider__input tariffs__input visually-hidden" name="slide" id="tariffs-slide1" >
+              <label for="tariffs-slide1" class="slider__label visually-hidden">Первый слайд</label>
             </li>
-            <li class="slider__item">
-              <input type="radio" class="slider__input" name="slide" id="tariffs-slide2">
-              <label for="tariffs-slide2" class="slider__label">Второй слайд</label>
+            <li class="tariffs__slider-item slider__item">
+              <input type="radio" class="slider__input tariffs__input visually-hidden" name="slide" id="tariffs-slide2" checked>
+              <label for="tariffs-slide2" class="slider__label visually-hidden">Второй слайд</label>
             </li>
-              <li class="slider__item">
-              <input type="radio" class="slider__input" name="slide" id="tariffs-slide3">
-              <label for="tariffs-slide3" class="slider__label">Третий слайд</label>
+              <li class="tariffs__slider-item slider__item">
+              <input type="radio" class="slider__input tariffs__input visually-hidden" name="slide" id="tariffs-slide3">
+              <label for="tariffs-slide3" class="slider__label visually-hidden">Третий слайд</label>
             </li>
           </ul>
         </div>
@@ -266,30 +348,32 @@
         </div>
         <div class="feedback__container">
           <div class="wrapper">
-            <div class="feedback__contacts">
-              <p class="feedback__text">
-                Звоните
-              </p>
-              <a href="tel:8-812-555-66-66" class="feedback__address">
-                +7 (812) 555-66-66
-              </a>
-            </div>
-            <div class="feedback__contacts">
-              <p class="feedback__text">
-                Пишите
-              </p>
-              <a href="mailto:mail@htmlacademy.ru" class="feedback__address">
-                mail@htmlacademy.ru
-              </a>
-            </div>
-            <div class="feedback__contacts">
-              <p class="feedback__text">
-                Приезжайте в гости:
-              </p>
-              <p class="feedback__address">
-                ул. Большая
-                Конюшенная, 19/8
-              </p>
+            <div class="feedback__flex">
+              <div class="feedback__contacts">
+                <p class="feedback__text">
+                  Звоните
+                </p>
+                <a href="tel:8-812-555-66-66" class="feedback__address link">
+                  +7 (812) 555-66-66
+                </a>
+              </div>
+              <div class="feedback__contacts">
+                <p class="feedback__text">
+                  Пишите
+                </p>
+                <a href="mailto:mail@htmlacademy.ru" class="feedback__address link">
+                  mail@htmlacademy.ru
+                </a>
+              </div>
+              <div class="feedback__contacts">
+                <p class="feedback__text">
+                  Приезжайте в гости:
+                </p>
+                <p class="feedback__address">
+                  ул. Большая
+                  Конюшенная, 19/8
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -298,8 +382,55 @@
         <h2 class="visually-hidden">
           Наше местоположение
         </h2>
-        <img src="#" class="map__img" alt="ул. Большая Конюшенная, 19/8">
+        <div class="map__img-container map__img-container--no-js">
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300295!2d30.320858715957424!3d59.93871916905443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1556105330124!5m2!1sru!2sru" width="320" height="200" allowfullscreen></iframe>
+        </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__flex">
+          <a class="footer__logo logo--footer">
+            <svg class="logo__svg logo__svg--footer" width="146.3" height="40.375" viewBox="0 0 147 40">
+              <g class="logo__text logo__text--footer" fill="#FFF">
+                <path d="M71.874 18.661c0-.708.58-1.288 1.256-1.288h7.18c5.087 0 8.436 2.704 8.436 7.146v.064c0 4.861-4.057 7.373-8.854 7.373h-5.475v6.825c0 .708-.58 1.288-1.288 1.288-.676 0-1.256-.58-1.256-1.288v-20.12zm8.114 10.98c3.734 0 6.182-1.996 6.182-4.959v-.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917h5.57v-.001zM93.603 18.5c0-.708.579-1.288 1.255-1.288.709 0 1.288.58 1.288 1.288v20.283a1.29 1.29 0 0 1-1.288 1.287c-.676 0-1.255-.579-1.255-1.287V18.5zM102.744 18.532c0-.676.58-1.256 1.256-1.256h.354c.58 0 .935.29 1.288.74l13.684 17.45V18.468c0-.676.547-1.256 1.256-1.256.676 0 1.224.58 1.224 1.256v20.349c0 .676-.481 1.19-1.158 1.19h-.129c-.548 0-.935-.321-1.319-.772l-13.975-17.868v17.45c0 .676-.547 1.256-1.256 1.256-.676 0-1.223-.58-1.223-1.256V18.532h-.002zM128.173 18.5c0-.708.58-1.288 1.257-1.288.708 0 1.286.58 1.286 1.288v12.331l12.848-13.168c.29-.257.579-.451.998-.451.676 0 1.225.612 1.225 1.256 0 .354-.162.644-.42.901l-7.984 7.92 8.564 10.561c.225.291.354.547.354.935 0 .676-.578 1.288-1.286 1.288-.483 0-.806-.258-1.03-.58l-8.402-10.463-4.863 4.861v4.894a1.29 1.29 0 0 1-1.286 1.288c-.677 0-1.257-.58-1.257-1.288V18.5h-.004z"/>
+              </g>
+              <path class="logo__point logo__point--footer" fill="#D22856" d="M98.498 9.875a3.623 3.623 0 0 1-3.623-3.624 3.625 3.625 0 0 1-3.625 3.624 3.625 3.625 0 0 1 3.625 3.624 3.623 3.623 0 0 1 3.623-3.624z"/>
+              <g class="logo__glasses logo__glasses--footer" fill="#FFF">
+                <path d="M43.094 19.313c.246 0 .489.014.73.033a2.491 2.491 0 0 0-2.136-1.221 1.994 1.994 0 0 1-1.884-1.354c-.727.208-1.425.482-2.089.816.062.017.122.038.188.038a2 2 0 0 1 2 2c0 .096-.015.188-.028.281 1-.382 2.084-.593 3.219-.593z"/>
+                <path d="M60.462 28.016L55.287 6.651C54.926 4.303 52.694 0 46.688 0a1.5 1.5 0 1 0 0 3c4.856 0 5.575 3.729 5.639 4.143l4.767 19.701h-2.073c-.445-3.557-2.453-6.628-5.305-8.522a2.503 2.503 0 0 0-1.529 2.303c0 .088-.015.171-.026.256a9.034 9.034 0 0 1 3.829 5.964c.082.489.135.988.135 1.5s-.053 1.012-.135 1.5c-.716 4.272-4.421 7.531-8.896 7.531-4.475 0-8.181-3.259-8.896-7.531-.082-.488-.135-.988-.135-1.5s.053-1.011.135-1.5a8.949 8.949 0 0 1 .808-2.483 1.995 1.995 0 0 1-1.852-1.985.743.743 0 0 0-.192-.489 11.954 11.954 0 0 0-1.795 4.958h-1.82c-.741-5.927-5.802-10.531-11.927-10.531S6.235 20.917 5.493 26.844H3.42L8.187 7.143C8.25 6.729 8.97 3 13.826 3a1.5 1.5 0 1 0 0-3C7.82 0 5.588 4.303 5.227 6.651L.052 28.016c-.266 1.109.531 1.826 1.426 1.826.012 0 .023.004.036.004h3.982c.079.628.215 1.237.387 1.831a.726.726 0 0 0 .102-.354 2 2 0 0 1 2-2c.166 0 .324.025.478.063a8.337 8.337 0 0 1-.074-1.042c0-.512.053-1.011.135-1.5.715-4.271 4.421-7.531 8.896-7.531s8.18 3.26 8.896 7.531c.082.489.135.988.135 1.5s-.053 1.012-.135 1.5c-.715 4.272-4.421 7.531-8.896 7.531a8.959 8.959 0 0 1-5.386-1.794c-.35.302-.8.491-1.299.491a.75.75 0 0 0-.749.748c0 .29-.065.564-.176.812a11.94 11.94 0 0 0 7.614 2.743c6.125 0 11.185-4.604 11.927-10.53h1.814c.742 5.926 5.802 10.53 11.927 10.53s11.186-4.604 11.927-10.53H59c.012 0 .023-.004.036-.004.895.001 1.692-.716 1.426-1.825z"/>
+              </g>
+              <path class="logo__glasses-nopoint logo__glasses-nopoint--footer" fill="#FFF" d="M60.462 28.016L55.287 6.651C54.926 4.303 52.694 0 46.688 0a1.5 1.5 0 1 0 0 3c4.856 0 5.575 3.729 5.639 4.143l4.767 19.701h-2.073c-.742-5.927-5.802-10.531-11.927-10.531s-11.186 4.604-11.927 10.531h-1.82c-.741-5.927-5.802-10.531-11.927-10.531S6.235 20.917 5.493 26.844H3.42L8.187 7.143C8.25 6.729 8.97 3 13.826 3a1.5 1.5 0 1 0 0-3C7.82 0 5.588 4.303 5.227 6.651L.052 28.016c-.266 1.109.531 1.826 1.426 1.826.012 0 .023.004.036.004h3.982c.741 5.926 5.802 10.53 11.927 10.53s11.185-4.604 11.927-10.53h1.814c.742 5.926 5.802 10.53 11.927 10.53s11.186-4.604 11.927-10.53H59c.012 0 .023-.004.036-.004.895 0 1.692-.717 1.426-1.826zm-34.147 1.828c-.715 4.272-4.421 7.531-8.896 7.531-4.475 0-8.18-3.259-8.896-7.531-.082-.488-.135-.988-.135-1.5s.053-1.011.135-1.5c.715-4.271 4.421-7.531 8.896-7.531 4.475 0 8.18 3.26 8.896 7.531.082.489.135.988.135 1.5s-.053 1.011-.135 1.5zm25.675 0c-.716 4.272-4.421 7.531-8.896 7.531-4.475 0-8.181-3.259-8.896-7.531-.082-.488-.135-.988-.135-1.5s.053-1.011.135-1.5c.716-4.271 4.421-7.531 8.896-7.531 4.475 0 8.181 3.26 8.896 7.531.082.489.135.988.135 1.5s-.053 1.011-.135 1.5z"/>
+              <path class="logo__points logo__points--footer" fill="#D22856" d="M50.686 16.125a4.499 4.499 0 0 1-4.499-4.499 4.499 4.499 0 0 1-4.499 4.499 4.499 4.499 0 0 1 4.499 4.499 4.498 4.498 0 0 1 4.499-4.499zM37.904 19.626a2.748 2.748 0 0 1-2.749-2.749 2.748 2.748 0 0 1-2.749 2.749 2.747 2.747 0 0 1 2.749 2.749 2.748 2.748 0 0 1 2.749-2.749zM10.734 34.072a2.748 2.748 0 0 1-2.749-2.75c0 1.52-1.23 2.75-2.749 2.75a2.747 2.747 0 0 1 2.749 2.748 2.748 2.748 0 0 1 2.749-2.748z"/>
+            </svg>
+          </a>
+          <div class="footer__social">
+            <ul class="footer__social-list social">
+              <li class="social__item">
+                <a href="#" class="social__link social__link--twitter" aria-label="Pink в Twitter"></a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link social__link--facebook" aria-label="Pink в Facebook"></a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link social__link--youtube" aria-label="Pink в Youtube"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__copyright copyright">
+            <p class="copyright__text">
+              Разработано:
+            </p>
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link" aria-label="Сайт HTML Academy">
+              <svg class="copyright__img" width="27" height="34">
+                <use xlink:href="#copyright"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/svgxuse.js" defer></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

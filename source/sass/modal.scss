@@ -1,0 +1,138 @@
+.modal {
+  width: 320px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1), -20px 0 30px -15px rgba(0, 0, 0, 0.1), 20px 0 30px -15px rgba(0, 0, 0, 0.1), 0 20px 30px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 40;
+  display: none;
+
+  &--fail {
+    min-height: 289px;
+  }
+
+  &--success {
+    min-height: 380px;
+  }
+}
+
+.modal__texts {
+  padding: 40px 25px 0;
+  margin-bottom: 35px;
+}
+
+.modal__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+
+.modal__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.modal__button {
+  border: 2px solid #2aab6d;
+  background-color: #2aab6d;
+  border-radius: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  padding: 13px 10px 12px;
+  width: 100%;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: #1c9b5e;
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    border-color: #1c9b5e;
+    background-color: #1c9b5e;
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    border-color: #e5e5e5;
+    background-color: #e5e5e5;
+  }
+}
+
+.modal__button-container {
+  background-color: $grey;
+  padding: 50px 22px 52px;
+}
+
+.modal--fail .modal__button-container {
+  background-color: transparent;
+  padding-top: 0;
+}
+
+@media (min-width: 660px) {
+  .modal {
+    width: 460px;
+
+    &--fail {
+      min-height: 363px;
+    }
+
+    &--success {
+      min-height: 432px;
+    }
+  }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal__text {
+    font-size: 18px;
+  }
+
+  .modal__texts {
+    padding: 40px 77px 0;
+  }
+
+  .modal__button-container {
+    padding: 50px 82px 52px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal {
+    width: 780px;
+    min-height: 377px;
+  }
+
+  .modal__texts {
+    padding: 40px 190px 0;
+    margin-bottom: 55px;
+  }
+
+  .modal--fail .modal__button-container {
+    background-color: $grey;
+    padding: 50px 242px 55px;
+  }
+
+  .modal--success .modal__button-container {
+    background-color: $grey;
+    padding: 50px 162px 55px;
+  }
+
+  .modal--success .modal__texts {
+    margin-bottom: 35px;
+  }
+}

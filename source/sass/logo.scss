@@ -1,0 +1,130 @@
+.logo {
+  width: 75px;
+  height: 24px;
+  display: block;
+}
+
+.logo:hover .logo__text,
+.logo:focus .logo__text,
+.logo:hover .logo__glasses-nopoint,
+.logo:focus .logo__glasses-nopoint,
+.logo:hover .logo__glasses,
+.logo:focus .logo__glasses {
+  fill: $pink;
+}
+
+.logo:active .logo__text,
+.logo:active .logo__glasses-nopoint,
+.logo:active .logo__glasses,
+.logo:active .logo__point,
+.logo:active .logo__points {
+  fill: #ffffff;
+  opacity: 0.3;
+}
+
+.logo__svg {
+  display: block;
+  position: relative;
+  bottom: 15px;
+  right: 70px;
+  margin-bottom: -20px;
+}
+
+.logo__glasses,
+.logo__point,
+.logo__points,
+.logo__glasses-nopoint {
+  display: none;
+}
+
+.logo__text--footer {
+  fill: $blue;
+}
+
+.logo__glasses-nopoint--footer {
+  display: block;
+  fill: $pink;
+}
+
+.logo--footer {
+  width: 147px;
+  height: 40px;
+  margin-bottom: 23px;
+}
+
+.logo__svg--footer {
+  right: 0;
+  margin-bottom: 0;
+  bottom: 0;
+}
+
+.logo--footer:hover .logo__text--footer,
+.logo--footer:focus .logo__text--footer,
+.logo--footer:hover .logo__points--footer,
+.logo--footer:focus .logo__points--footer {
+  fill: $pink;
+}
+
+.logo--footer:active .logo__text--footer {
+  fill: $blue;
+  opacity: 0.3;
+}
+
+.logo--footer:active .logo__glasses-nopoint--footer,
+.logo--footer:active .logo__glasses--footer,
+.logo--footer:active .logo__point--footer,
+.logo--footer:active .logo__points--footer {
+  fill: $pink;
+  opacity: 0.3;
+}
+
+@media (min-width: 660px) {
+  .logo {
+    width: 147px;
+    height: 40px;
+  }
+
+  .logo__svg {
+    right: 0;
+    bottom: 0;
+  }
+
+  .logo__glasses-nopoint {
+    display: block;
+    fill: #ffffff;
+  }
+
+  .logo__glasses-nopoint--footer {
+    fill: $pink;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo__glasses-nopoint {
+    display: none;
+  }
+
+  .logo__point,
+  .logo__glasses,
+  .logo__points {
+    display: block;
+  }
+
+  .logo__point,
+  .logo__points {
+    fill: $pink;
+  }
+
+  .logo__glasses-nopoint--footer {
+    display: none;
+  }
+
+  .logo__glasses--footer {
+    display: block;
+    fill: $pink;
+  }
+
+  .logo__points--footer {
+    fill: $blue;
+  }
+}

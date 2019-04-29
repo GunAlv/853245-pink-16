@@ -1,0 +1,14 @@
+.link {
+  color: $pink;
+  text-decoration: underline;
+  transform: 0.1s;
+
+  &:hover,
+  &:focus {
+    color: $blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

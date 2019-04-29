@@ -1,9 +1,95 @@
 .input__label {
   color: $pink;
   text-transform: uppercase;
+  margin-left: 21px;
+  margin-bottom: 7px;
+  // display: block;
 }
 
 .input__custom-input {
   border: 2px solid #e5e5e5;
   font-size: 18px;
+  width: 100%;
+  padding: 18px 10px 19px 20px;
+  transition: 0.1s;
+}
+
+.input__custom-input:hover {
+  border-color: $blue;
+}
+
+.input__custom-input:active,
+.input__custom-input:focus {
+  border-color: $pink;
+}
+
+@media (min-width: 660px) {
+  .input {
+    display: flex;
+    align-items: center;
+  }
+
+  .input__label {
+    margin-left: 17px;
+    margin-top: 8px;
+  }
+
+  .input__custom-input {
+    margin-left: 20px;
+    height: 61px;
+  }
+
+  .input--column {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    width: 496px;
+    margin: 0 auto;
+    margin-bottom: 17px;
+    position: relative;
+  }
+
+  .input--column::after {
+    position: absolute;
+    content: "";
+    width: 58px;
+    height: 57px;
+    background-color: $grey;
+    top: 2px;
+    right: 2px;
+  }
+
+  .input--column::before {
+    position: absolute;
+    content: "";
+    top: 22px;
+    right: 20px;
+    z-index: 1;
+  }
+
+  .input--column-phone::before {
+    background-image: url("../img/icon-phone.svg");
+    width: 20px;
+    height: 19px;
+  }
+
+  .input--column-mail::before {
+    background-image: url("../img/icon-mail.svg");
+    width: 18px;
+    height: 13px;
+  }
+
+  .input--column .input__custom-input {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .input__custom-input {
+    width: 371px;
+  }
+
+  .input--column {
+    margin: 0;
+    width: 371px;
+  }
 }

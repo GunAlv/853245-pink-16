@@ -1,5 +1,12 @@
 .photo__info {
   background-color: $grey;
+  padding: 16px 23px 20px 17px;
+}
+
+.photo__author,
+.photo__author-comment {
+  margin: 0;
+  color: $blue;
 }
 
 .photo__author {
@@ -15,6 +22,8 @@
 
 .photo__author-comment {
   line-height: 24px;
+  margin-bottom: 7px;
+  margin-top: -5px;
 }
 
 .photo__likes-amount {
@@ -22,4 +31,148 @@
   line-height: 24px;
   text-transform: uppercase;
   color: $pink;
+  margin-left: 17px;
+}
+
+.photo__img-container {
+  width: 280px;
+  height: 180px;
+}
+
+.photo__img-panorama {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 140px;
+    height: 36px;
+    background-image: url("../img/icon-panorama.png");
+    right: 20px;
+    top: 0;
+  }
+}
+
+.photo__img--day {
+  display: block;
+  width: 100%;
+}
+
+.photo__likes-button {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  width: 13px;
+  height: 12px;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 12px;
+    background-image: url("../img/icon-like.svg");
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+  }
+}
+
+.photo {
+  margin-bottom: 18px;
+}
+
+
+@media (min-width: 660px) {
+  .photo:not(.photo--day) {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .photo--day {
+    margin-bottom: 50px;
+  }
+
+  .photo__img-container,
+  .photo__img:not(.photo__img--day) {
+    width: 300px;
+    height: 300px;
+  }
+
+  .photo__img--day {
+    min-height: 509px;
+  }
+
+  .photo__img-panorama::before {
+    top: 55px;
+    right: 22px;
+  }
+
+  .photo__info {
+    position: relative;
+    padding-top: 22px;
+    padding-left: 26px;
+  }
+
+  .photo__info:not(.photo__info--day) {
+    width: 300px;
+    min-height: 155px;
+    position: relative;
+    padding-bottom: 45px;
+    padding-top: 15px;
+  }
+
+  .photo__likes--day {
+    position: absolute;
+    top: 26px;
+    right: 29px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .photo__likes:not(.photo__likes--day) {
+    position: absolute;
+    bottom: 22px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .photo__likes-button:not(.photo__likes-button--day) {
+    left: 150px;
+    top: 3px;
+  }
+
+  .photo__likes-button--day {
+    margin-left: 17px;
+    margin-top: 5px;
+  }
+
+  .photo__likes-amount {
+    margin-left: 0;
+  }
+
+  .photo__author {
+    margin-bottom: 3px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .photo__img--day {
+    min-height: 506px;
+  }
+
+  .photo__img-container,
+  .photo__img:not(.photo__img--day) {
+    height: 400px;
+  }
+
+  .photo:not(.photo--day) {
+    margin-bottom: 46px;
+  }
+
+  .photo__img-panorama::before {
+    top: 54px;
+    right: 130px;
+  }
 }

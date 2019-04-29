@@ -1,3 +1,35 @@
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
 .copyright__text {
   line-height: 18px;
+}
+
+.copyright__link {
+  width: 27px;
+  height: 34px;
+  margin-left: 15px;
+}
+
+.copyright__link:hover .copyright__img,
+.copyright__link:focus .copyright__img {
+  fill: $blue;
+}
+
+.copyright__link:active .copyright__img {
+  fill: $blue;
+  opacity: 0.3;
+}
+
+.copyright__img {
+  transition: 0.1s;
+  fill: #d22856;
+}
+
+@media (min-width: 1200px) {
+  .copyright__text {
+    font-size: 18px;
+  }
 }
