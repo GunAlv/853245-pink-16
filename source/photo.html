@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/picturefill.min.js" async></script>
 </head>
 <body>
   <svg style="display:none">
@@ -20,9 +21,9 @@
       <path fill="none" d="M0 0h48v48H0V0z"/>
       <path d="M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11c.58.59 1.35.88 2.12.88s1.54-.29 2.12-.88l11-11a3 3 0 0 0 0-4.24zM10.41 20L20 10.42 29.59 20H10.41zM38 23s-4 4.33-4 7c0 2.21 1.79 4 4 4s4-1.79 4-4c0-2.67-4-7-4-7zM0 40h48v3H0z"/>
     </symbol>
-    <svg id="editor" viewBox="-35.422 -7.96 31.92 31.92">
+    <symbol id="editor" viewBox="-35.422 -7.96 31.92 31.92">
       <path d="M-19.462-3.96c6.595 0 11.96 5.365 11.96 11.96s-5.365 11.96-11.96 11.96-11.96-5.365-11.96-11.96 5.365-11.96 11.96-11.96m0-4c-8.814 0-15.96 7.145-15.96 15.96 0 8.813 7.146 15.96 15.96 15.96S-3.502 16.813-3.502 8c0-8.815-7.146-15.96-15.96-15.96z"/><path d="M-19.462 16.331a8.519 8.519 0 0 0 8.52-8.52 8.518 8.518 0 0 0-8.52-8.519"/>
-    </svg>
+    </symbol>
   </svg>
   <header class="page-header page-header--no-js page-header--diff">
     <div class="page-header__bg page-header__bg--no-js page-header__bg--diff">
@@ -99,9 +100,9 @@
         <div class="photo photo--day">
           <div class="photo__img-panorama">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg">
-              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
-              <img src="img/panorama-mobile@1x.jpg" alt="Фото" class="photo__img photo__img--day" width="320" height="137">
+              <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фото" class="photo__img photo__img--day" width="320" height="137">
             </picture>
           </div>
           <div class="wrapper">
@@ -131,9 +132,9 @@
           <div class="photo">
             <div class="photo__img-container">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
-                <img src="img/photo-car-mobile@1x.jpg" alt="Фото" class="photo__img" width="280" height="180">
+                <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото" class="photo__img" width="280" height="180">
               </picture>
             </div>
             <div class="photo__info">
@@ -158,9 +159,9 @@
           <div class="photo">
             <div class="photo__img-container">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
-                <img src="img/photo-drumset-mobile@1x.jpg" alt="Фото" class="photo__img" width="280" height="180">
+                <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Фото" class="photo__img" width="280" height="180">
               </picture>
             </div>
             <div class="photo__info">
@@ -185,9 +186,9 @@
           <div class="photo">
             <div class="photo__img-container">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
-                <img src="img/photo-window-mobile@1x.jpg" alt="Фото" class="photo__img" width="280" height="180">
+                <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Фото" class="photo__img" width="280" height="180">
               </picture>
             </div>
             <div class="photo__info">
@@ -212,9 +213,9 @@
           <div class="photo">
             <div class="photo__img-container">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
-                <img src="img/photo-fair-mobile@1x.jpg" alt="Фото" class="photo__img" width="280" height="180">
+                <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Фото" class="photo__img" width="280" height="180">
               </picture>
             </div>
             <div class="photo__info">
@@ -239,9 +240,9 @@
           <div class="photo">
             <div class="photo__img-container">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
-                <img src="img/photo-pov-mobile@1x.jpg" alt="Фото" class="photo__img" width="280" height="180">
+                <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Фото" class="photo__img" width="280" height="180">
               </picture>
             </div>
             <div class="photo__info">
@@ -266,9 +267,9 @@
           <div class="photo">
             <div class="photo__img-container">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg">
-                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
-                <img src="img/photo-wing-mobile@1x.jpg" alt="Фото" class="photo__img" width="280" height="180">
+                <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Фото" class="photo__img" width="280" height="180">
               </picture>
             </div>
             <div class="photo__info">
@@ -308,9 +309,9 @@
             <div class="filter__flex">
               <div class="filter__img-container">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg">
-                  <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
-                  <img src="img/photo-road-mobile@1x.jpg" alt="Обрабатываемое фото" class="filter__img" width="280" height="374">
+                  <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                  <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Обрабатываемое фото" class="filter__img" width="280" height="374">
                 </picture>
               </div>
               <div class="filter__flex-column">
