@@ -84,7 +84,7 @@
   padding-top: 0;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet) {
   .modal {
     width: 460px;
 
@@ -115,7 +115,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .modal {
     width: 780px;
     min-height: 377px;

@@ -18,7 +18,7 @@
   border-color: $pink;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet) {
   .textarea {
     width: 496px;
     // text-align: center;
@@ -29,7 +29,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .textarea {
     width: 816px;
     min-height: 124px;

@@ -30,7 +30,7 @@
   }
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet) {
   .scale {
     margin-top: 12px;
   }
@@ -46,7 +46,7 @@
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .scale__custom,
   .scale__custom-line {
     width: 288px;

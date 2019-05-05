@@ -148,7 +148,7 @@
   }
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet) {
   .tariffs {
     padding-top: 105px;
     padding-bottom: 65px;
@@ -238,7 +238,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .tariffs {
     margin-top: 20px;
     padding-top: 155px;

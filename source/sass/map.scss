@@ -56,7 +56,7 @@
   display: none;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet) {
   .map::before {
     border-top: 68px solid #ffffff;
   }
@@ -78,7 +78,7 @@
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .map::before {
     border-top: 100px solid #ffffff;
   }

@@ -45,7 +45,7 @@
   margin-bottom: 40px;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet) {
   .radio__label {
     margin-left: 0;
 
@@ -59,7 +59,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .radio.form__list-item {
     margin-left: 75px;
   }

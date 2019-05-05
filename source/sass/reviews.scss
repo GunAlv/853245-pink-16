@@ -65,7 +65,7 @@
 }
 
 
-@media (min-width: 660px) {
+@media (min-width: $tablet) {
   .reviews {
     padding-top: 30px;
   }
@@ -98,7 +98,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .reviews {
     padding-top: 176px;
     position: relative;
