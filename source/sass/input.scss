@@ -3,7 +3,6 @@
   text-transform: uppercase;
   margin-left: 21px;
   margin-bottom: 7px;
-  // display: block;
 }
 
 .input__custom-input {
@@ -23,7 +22,7 @@
   border-color: $pink;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet) {
   .input {
     display: flex;
     align-items: center;
@@ -83,7 +82,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .input__custom-input {
     width: 371px;
   }

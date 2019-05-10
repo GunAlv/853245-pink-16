@@ -88,7 +88,7 @@
 }
 
 
-@media (min-width: 660px) {
+@media (min-width: $tablet) {
   .photo:not(.photo--day) {
     margin-left: 20px;
     margin-bottom: 20px;
@@ -162,7 +162,7 @@
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .photo__img--day {
     min-height: 506px;
   }

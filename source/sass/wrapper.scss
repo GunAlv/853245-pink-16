@@ -4,15 +4,15 @@
   margin: 0 auto;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet) {
   .wrapper {
     width: 660px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .wrapper {
-    width: 1200px;
-    padding: 0 130px;
+    width: 960px;
+    padding: 0 10px;
   }
 }

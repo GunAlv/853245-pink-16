@@ -1,4 +1,4 @@
-@media (min-width: 660px) {
+@media (min-width: $tablet) {
   .photo-main__flex {
     display: flex;
     flex-wrap: wrap;

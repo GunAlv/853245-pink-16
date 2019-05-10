@@ -41,13 +41,13 @@
   border-color: $pink;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet) {
   .checkbox__label {
     margin-left: 0;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .checkbox__label {
     &::before {
       left: -60px;

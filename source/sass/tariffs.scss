@@ -126,7 +126,6 @@
 
   .tariffs__list {
     display: flex;
-    // width: 320px;
     margin: 0 auto;
     transition: 0.4s;
   }
@@ -147,18 +146,9 @@
     min-width: 280px;
     margin-bottom: 40px;
   }
-
-  // @keyframes tariffs {
-  //   from {
-  //     transform: translateX(0);
-  //   }
-  //   to {
-  //     transform: translateX(-280px);
-  //   }
-  // }
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet) {
   .tariffs {
     padding-top: 105px;
     padding-bottom: 65px;
@@ -184,7 +174,6 @@
   }
 
   .tariffs__item {
-    // flex-grow: 1;
     width: 155px;
   }
 
@@ -219,7 +208,6 @@
 
   .tariffs__features {
     width: 153px;
-    // align-self: flex-end;
     margin-top: 78px;
   }
 
@@ -245,16 +233,13 @@
 
   .tariffs__list {
     display: flex;
-    // width: auto;
     width: 465px;
     flex-wrap: wrap;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .tariffs {
-    // min-height: 525px;
-    // background-size: cover, auto;
     margin-top: 20px;
     padding-top: 155px;
     padding-bottom: 95px;

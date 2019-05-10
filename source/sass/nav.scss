@@ -2,7 +2,7 @@
   @include list-reset;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 959px) {
   .nav {
     width: 100%;
     background-color: $blue;
@@ -35,7 +35,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .nav__link {
     font-size: 18px;
     line-height: 18px;

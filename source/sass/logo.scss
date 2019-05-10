@@ -78,7 +78,7 @@
   opacity: 0.3;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet) {
   .logo {
     width: 147px;
     height: 40px;
@@ -99,7 +99,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .logo__glasses-nopoint {
     display: none;
   }

@@ -114,7 +114,7 @@
   margin-bottom: 57px;
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet) {
   .form .form__item {
     padding: 0;
     padding-top: 45px;
@@ -146,9 +146,6 @@
   .form__legend {
     display: block;
     padding: 0 25px;
-    // &--shown {
-    //   display: block;
-    // }
 
     &--center {
       top: 0;
@@ -161,7 +158,6 @@
   }
 
   .form__list {
-    // margin-top: 0;
     width: 496px;
     margin: 0 auto;
     padding-left: 60px;
@@ -199,7 +195,6 @@
 
   .form .form__item--text {
     padding-top: 15px;
-    // position: relative;
   }
 
   .form__button {
@@ -209,12 +204,11 @@
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop) {
   .form {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    // overflow: hidden;
   }
 
   .form__span--hidden {
@@ -224,7 +218,6 @@
   .form .form__item--information,
   .form .form__item--apps {
     width: 430px;
-    // padding-right: 36px;
   }
 
   .form__list {
@@ -245,19 +238,15 @@
     width: auto;
     display: flex;
     flex-wrap: wrap;
-    // margin-left: -65px;
   }
 
   .form .form__item--travelling {
-    // padding-left: 116px;
     width: 936px;
     padding-bottom: 0;
   }
 
   .form__list-item {
-    // width: 210px;
     width: 200px;
-    // margin-left: 65px;
     margin-left: 100px;
   }
 
@@ -270,7 +259,6 @@
 
   .form__container-flex {
     display: flex;
-    // width: 818px;
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
