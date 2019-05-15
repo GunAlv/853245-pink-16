@@ -7,6 +7,11 @@
   min-height: 197px;
   padding: 19px 25px 10px 19px;
   font-family: "Open Sans", "Arial", sans-serif;
+
+  &--error {
+    box-shadow: -1px 0 4px 1px rgba(189, 41, 0, 0.92);
+    border: 2px solid red;
+  }
 }
 
 .textarea:hover {
