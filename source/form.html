@@ -92,11 +92,11 @@
               </legend>
               <div class="form__item-container input">
                 <label class="input__label" for="user_second-name">Фамилия:</label>
-                <input class="input__custom-input" type="text" placeholder="Укажите фамилию *" name="user_second-name" id="user_second-name">
+                <input class="input__custom-input" type="text" placeholder="Укажите фамилию *" name="user_second-name" id="user_second-name" required>
               </div>
               <div class="form__item-container input">
                 <label class="input__label" for="user_name">Имя:</label>
-                <input class="input__custom-input" type="text" placeholder="Укажите ваше имя *" name="user_name" id="user_name">
+                <input class="input__custom-input" type="text" placeholder="Укажите ваше имя *" name="user_name" id="user_name" required>
               </div>
               <div class="form__item-container input">
                 <label class="input__label" for="user_patronymic">Отчество:</label>
@@ -110,13 +110,13 @@
               <div class="form__list-container">
                 <ul class="form__list">
                   <li class="form__list-item checkbox">
-                    <input type="checkbox" class="checkbox__custom-checkbox visually-hidden" name="shark" id="shark" checked="">
+                    <input type="checkbox" class="checkbox__custom-checkbox visually-hidden" name="shark" id="shark" checked>
                     <label for="shark" class="checkbox__label">
                       Сделал селфи с акулой
                     </label>
                   </li>
                   <li class="form__list-item checkbox">
-                    <input type="checkbox" class="checkbox__custom-checkbox visually-hidden" name="beach" id="beach" checked="">
+                    <input type="checkbox" class="checkbox__custom-checkbox visually-hidden" name="beach" id="beach" checked>
                     <label for="beach" class="checkbox__label">
                       Обгорел на пляже
                     </label>
@@ -134,7 +134,7 @@
                     </label>
                   </li>
                   <li class="form__list-item checkbox">
-                    <input type="checkbox" class="checkbox__custom-checkbox visually-hidden" name="tower" id="tower" checked="">
+                    <input type="checkbox" class="checkbox__custom-checkbox visually-hidden" name="tower" id="tower" checked>
                     <label for="tower" class="checkbox__label">
                       Удержал башню
                     </label>
@@ -155,11 +155,11 @@
               <div class="form__container-flex">
                 <div class="form__item-container input input--column input--column-phone">
                   <label class="input__label" for="phone">Номер телефона:</label>
-                  <input class="input__custom-input" type="text" placeholder="Номер, пожалуйста" name="phone" id="phone">
+                  <input type="tel" class="input__custom-input" placeholder="Номер, пожалуйста" name="phone" id="phone">
                 </div>
                 <div class="form__item-container input input--column input--column-mail">
                   <label class="input__label" for="user_email">Адрес почты:</label>
-                  <input class="input__custom-input" type="email" placeholder="Введите почту *" name="user_email" id="user_email">
+                  <input type="email" class="input__custom-input" placeholder="Введите почту *" name="user_email" id="user_email" required>
                 </div>
               </div>
             </fieldset>
@@ -169,7 +169,7 @@
               </legend>
               <div class="form__list">
                 <div class="form__list-item radio">
-                  <input type="radio" class="radio__input visually-hidden" name="oc" id="ios" checked="">
+                  <input type="radio" class="radio__input visually-hidden" name="oc" id="ios" checked>
                   <label for="ios" class="radio__label">Pink для iOS</label>
                 </div>
                 <div class="form__list-item radio">
@@ -186,7 +186,7 @@
               <legend class="form__legend form__legend--text">
                 Опишите свои эмоции
               </legend>
-              <textarea class="textarea" name="textarea" id="textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <textarea class="textarea" name="textarea" id="textarea" placeholder="Можно прям в красках, не стесняясь в выражениях" required></textarea>
             </fieldset>
             <div class="form__flex">
               <button type="submit" class="form__button">
